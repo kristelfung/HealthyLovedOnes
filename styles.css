@@ -1,0 +1,40 @@
+.container-fluid {
+    padding: 10px 60px;
+}
+
+@font-face {
+    font-family: 'Noto-Sans';
+    src: url(fonts/Noto_Sans/NotoSans-Regular.ttf) format("truetype");
+}
+
+body {
+    font-family: 'Noto-Sans';
+}
+
+h1 {
+    font-size: 42px;
+}
+
+h2 {
+    font-size: 34px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+h6 {
+    font-size: 12px;
+}
+
+p {
+    font-size: 14px;
+}

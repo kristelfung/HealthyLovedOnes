@@ -1,0 +1,30 @@
+{
+	"version": 3,
+	"file": "../scss/main.css",
+	"sources": [
+		"../scss/main.scss",
+		"../scss/base/_variables.scss",
+		"../scss/base/_mixins.scss",
+		"../scss/base/_base.scss",
+		"../scss/modules/_jumbotron.scss",
+		"../scss/modules/_buttons.scss",
+		"../scss/modules/_pricings.scss",
+		"../scss/layouts/_navbar.scss",
+		"../scss/layouts/_header.scss",
+		"../scss/layouts/_footer.scss"
+	],
+	"sourcesContent": [
+		"/*\n    HealthyLovedOnes SCSS + Bootstrap\n    Author: Kristel Fung\n    Version: v1.0.0\n*/\n\n/* BASE - styles, variables, mixins... */\n@import 'base/_variables.scss';\n@import 'base/_mixins.scss';\n@import 'base/_base.scss';\n\n/* MODULES - jumbotron, buttons, pricings... */\n@import 'modules/_jumbotron.scss';\n@import 'modules/_buttons.scss';\n@import 'modules/_pricings.scss';\n\n/* LAYOUTS - header, footer, navbar... */\n@import 'layouts/_navbar.scss';\n@import 'layouts/_header.scss';\n@import 'layouts/_footer.scss';\n",
+		"$font-stack: Noto-Sans, Helvetica;\n",
+		"",
+		"body {\n    font-family: $font-stack;\n}\n",
+		"",
+		"",
+		"",
+		"",
+		"",
+		""
+	],
+	"mappings": "AAAA;;;;EAIE;AAEF,yCAAyC;;AGNzC,AAAA,IAAI,CAAC;EACD,WAAW,EFDF,SAAS,EAAE,SAAS;CEEhC;;AHSD,+CAA+C;AAK/C,yCAAyC",
+	"names": []
+}

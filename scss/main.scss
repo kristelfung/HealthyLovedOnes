@@ -1,0 +1,20 @@
+/*
+    HealthyLovedOnes SCSS + Bootstrap
+    Author: Kristel Fung
+    Version: v1.0.0
+*/
+
+/* BASE - styles, variables, mixins... */
+@import 'base/_variables.scss';
+@import 'base/_mixins.scss';
+@import 'base/_base.scss';
+
+/* MODULES - jumbotron, buttons, pricings... */
+@import 'modules/_jumbotron.scss';
+@import 'modules/_buttons.scss';
+@import 'modules/_pricings.scss';
+
+/* LAYOUTS - header, footer, navbar... */
+@import 'layouts/_navbar.scss';
+@import 'layouts/_header.scss';
+@import 'layouts/_footer.scss';
