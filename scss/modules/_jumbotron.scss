@@ -1,0 +1,29 @@
+.jumbotron {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/home-background.jpg');
+    background-size: cover;
+    background-position: center bottom;
+    min-height: 500px;
+    color: $purewhite;
+    margin-bottom: 0px;
+}
+
+.jumbotron h1 {
+    font-size: 42px;
+}
+
+.jumbotron p {
+    font-size: 16px;
+}
+
+.hlo-desc {
+    padding: 15px 5px 60px 5px; /* top right bottom left */
+    text-align: center;
+}
+
+.home-buttons {
+    text-align: left;
+    width: 550px;
+    padding: 40px 60px 50px 40px;
+    margin-right: 0px;
+    background-color: rgba(0, 0, 0, 0.7);
+}

@@ -1,0 +1,58 @@
+/* get the size of the navbar right */
+.navbar {
+    min-height: 70px;
+    margin-bottom: 0px;
+    li {
+        a {
+            line-height: 70px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+    }
+}
+
+/* styles of navbar */
+.navbar-default {
+    background-color: transparent;
+    border: none;
+    .navbar-nav {
+        > li {
+            padding: 0px 3px 0px 3px;
+            > a {
+                color: #333;
+            }
+            > a:hover {
+                color: #777;
+            }
+        }
+        > .active {
+            > a {
+                background-color: transparent;
+                color: #333;
+            }
+            > a:hover {
+                background-color: transparent;
+                color: #777;
+            }
+            > a:focus {
+                background-color: transparent;
+            }
+        }
+    }
+}
+
+/* logo styling */
+.navbar-brand {
+    padding: 0px;
+    min-height: 70px;
+}
+
+.logo {
+    height: 100%;
+    padding: 10px 5px 10px 5px;
+}
+
+/* navbar divider the ||| */
+.navbar-divider {
+    line-height: 70px;
+}

@@ -1,0 +1,33 @@
+/* green button */
+.btn {
+    border-radius: 8px;
+}
+
+.btn-success {
+    background-color: $green;
+    border-color: $darkgreen;
+}
+
+.btn-default {
+    background-color: $lightgrey;
+    border-color: $mediumgrey;
+}
+
+.home-buttons {
+    .btn {
+        margin-right: 15px;
+        padding: 12px 30px;
+    }
+
+    .btn-default {
+        background-color: transparent;
+        border-color: $white;
+        color: $purewhite;
+        transition: background 0.2s linear;
+    }
+
+    .btn-default:hover{
+        background-color: $white;
+        color: $pureblack;
+    }
+}
