@@ -11,12 +11,14 @@
 
 /* MODULES - jumbotron, buttons, pricings... */
 @import 'modules/_jumbotron.scss';
-@import 'modules/_pinkbar.scss';
+@import 'modules/_homebar.scss';
 @import 'modules/_homedesc.scss';
-@import 'modules/_buttons.scss';
 @import 'modules/_pricings.scss';
+@import 'modules/_carousel.scss';
+@import 'modules/_featured.scss';
+@import 'modules/_buttons.scss';
 
-/* LAYOUTS - header, footer, navbar... */
+/* LAYOUTS - found on every page: header, footer, navbar... */
 @import 'layouts/_navbar.scss';
 @import 'layouts/_header.scss';
 @import 'layouts/_footer.scss';

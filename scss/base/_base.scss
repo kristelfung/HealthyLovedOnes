@@ -1,42 +1,53 @@
 @include font-face(NotoSans, "../fonts/NotoSans/NotoSans-Regular");
 
-body {
+html, body {
     font-family: $font-stack;
     color: $pureblack;
-    line-height: 1.2;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 h1 {
     font-size: 42px;
-    opacity: 0.87;
 }
 
 h2 {
     font-size: 36px;
-    opacity: 0.87;
 }
 
 h3 {
     font-size: 28px;
-    opacity: 0.87;
 }
 
 h4 {
     font-size: 22px;
-    opacity: 0.87;
 }
 
 h5 {
     font-size: 16px;
-    opacity: 0.87;
 }
 
 h6 {
     font-size: 12px;
-    opacity: 0.87;
 }
 
 p {
     font-size: 14px;
+}
+
+hr {
+    border-top: 1px solid $mediumgrey;
+    opacity: 0.4;
+}
+
+/* ADD LI???? */
+h1, h2, h3, h4, h5, h6, p {
     opacity: 0.87;
+    line-height: 1.2;
+}
+
+.text-center {
+    text-align: center;
 }

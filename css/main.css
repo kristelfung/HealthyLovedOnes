@@ -14,52 +14,66 @@
 }
 
 /* line 3, /Users/s180024/Documents/HLO static/scss/base/_base.scss */
-body {
+html, body {
   font-family: NotoSans, Helvetica;
   color: #000000;
-  line-height: 1.2;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
-/* line 9, /Users/s180024/Documents/HLO static/scss/base/_base.scss */
+/* line 12, /Users/s180024/Documents/HLO static/scss/base/_base.scss */
 h1 {
   font-size: 42px;
-  opacity: 0.87;
 }
 
-/* line 14, /Users/s180024/Documents/HLO static/scss/base/_base.scss */
+/* line 16, /Users/s180024/Documents/HLO static/scss/base/_base.scss */
 h2 {
   font-size: 36px;
-  opacity: 0.87;
 }
 
-/* line 19, /Users/s180024/Documents/HLO static/scss/base/_base.scss */
+/* line 20, /Users/s180024/Documents/HLO static/scss/base/_base.scss */
 h3 {
   font-size: 28px;
-  opacity: 0.87;
 }
 
 /* line 24, /Users/s180024/Documents/HLO static/scss/base/_base.scss */
 h4 {
   font-size: 22px;
-  opacity: 0.87;
 }
 
-/* line 29, /Users/s180024/Documents/HLO static/scss/base/_base.scss */
+/* line 28, /Users/s180024/Documents/HLO static/scss/base/_base.scss */
 h5 {
   font-size: 16px;
-  opacity: 0.87;
 }
 
-/* line 34, /Users/s180024/Documents/HLO static/scss/base/_base.scss */
+/* line 32, /Users/s180024/Documents/HLO static/scss/base/_base.scss */
 h6 {
   font-size: 12px;
-  opacity: 0.87;
 }
 
-/* line 39, /Users/s180024/Documents/HLO static/scss/base/_base.scss */
+/* line 36, /Users/s180024/Documents/HLO static/scss/base/_base.scss */
 p {
   font-size: 14px;
+}
+
+/* line 40, /Users/s180024/Documents/HLO static/scss/base/_base.scss */
+hr {
+  border-top: 1px solid #919191;
+  opacity: 0.4;
+}
+
+/* ADD LI???? */
+/* line 46, /Users/s180024/Documents/HLO static/scss/base/_base.scss */
+h1, h2, h3, h4, h5, h6, p {
   opacity: 0.87;
+  line-height: 1.2;
+}
+
+/* line 51, /Users/s180024/Documents/HLO static/scss/base/_base.scss */
+.text-center {
+  text-align: center;
 }
 
 /* MODULES - jumbotron, buttons, pricings... */
@@ -99,20 +113,21 @@ p {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-/* line 1, /Users/s180024/Documents/HLO static/scss/modules/_pinkbar.scss */
+/* line 1, /Users/s180024/Documents/HLO static/scss/modules/_homebar.scss */
 .pink-bar {
-  background-color: #FCE4EC;
+  background-color: #1B5E20;
   padding: 10px 40px;
+  color: #ffffff;
 }
 
-/* line 5, /Users/s180024/Documents/HLO static/scss/modules/_pinkbar.scss */
+/* line 6, /Users/s180024/Documents/HLO static/scss/modules/_homebar.scss */
 .pink-bar .col-sm-8 {
   text-align: right;
 }
 
-/* line 9, /Users/s180024/Documents/HLO static/scss/modules/_pinkbar.scss */
+/* line 10, /Users/s180024/Documents/HLO static/scss/modules/_homebar.scss */
 .pink-bar a {
-  color: #000000;
+  color: #ffffff;
 }
 
 /* line 1, /Users/s180024/Documents/HLO static/scss/modules/_homedesc.scss */
@@ -127,31 +142,96 @@ p {
   padding: 60px 10px;
 }
 
+/* line 1, /Users/s180024/Documents/HLO static/scss/modules/_pricings.scss */
+.pricings {
+  background: linear-gradient(#F44336, #B71C1C);
+  /* Standard syntax */
+  color: #ffffff;
+  text-align: center;
+  padding: 50px 0px;
+}
+
+/* line 8, /Users/s180024/Documents/HLO static/scss/modules/_pricings.scss */
+.pricing-table {
+  margin-top: 40px;
+  color: #000000;
+  padding: 30px 150px;
+}
+
+/* line 13, /Users/s180024/Documents/HLO static/scss/modules/_pricings.scss */
+.pricing-table .free-plan, .pricing-table .partner-plan, .pricing-table .entrepreneur-plan {
+  background-color: #FEFEFE;
+  padding: 40px;
+}
+
+/* line 18, /Users/s180024/Documents/HLO static/scss/modules/_pricings.scss */
+.pricing-table .entrepreneur-plan {
+  margin-top: -20px;
+  padding-bottom: 55px;
+}
+
+/* line 23, /Users/s180024/Documents/HLO static/scss/modules/_pricings.scss */
+.pricing-table .price-label {
+  color: #E91E63;
+  font-size: 70px;
+}
+
+/* line 28, /Users/s180024/Documents/HLO static/scss/modules/_pricings.scss */
+.pricing-table .plan-features {
+  padding: 20px 0px;
+}
+
+/* line 33, /Users/s180024/Documents/HLO static/scss/modules/_pricings.scss */
+.insurance {
+  padding: 40px 120px 10px 120px;
+  /* top right bottom left */
+  opacity: 0.7;
+}
+
+/* line 1, /Users/s180024/Documents/HLO static/scss/modules/_carousel.scss */
+.caregiver-types {
+  text-align: center;
+  padding: 30px 40px 70px 40px;
+}
+
+/* line 1, /Users/s180024/Documents/HLO static/scss/modules/_featured.scss */
+.featured {
+  background-color: #f0f0f0;
+  padding: 40px;
+}
+
+/* line 6, /Users/s180024/Documents/HLO static/scss/modules/_featured.scss */
+.feature-row {
+  padding: 20px;
+}
+
 /* green button */
 /* line 2, /Users/s180024/Documents/HLO static/scss/modules/_buttons.scss */
 .btn {
   border-radius: 8px;
 }
 
-/* line 6, /Users/s180024/Documents/HLO static/scss/modules/_buttons.scss */
+/* primary CTA */
+/* line 7, /Users/s180024/Documents/HLO static/scss/modules/_buttons.scss */
 .btn-success {
   background-color: #43A047;
-  border-color: #1B5E20;
+  border-color: #43A047;
 }
 
-/* line 11, /Users/s180024/Documents/HLO static/scss/modules/_buttons.scss */
+/* secondary CTA */
+/* line 13, /Users/s180024/Documents/HLO static/scss/modules/_buttons.scss */
 .btn-default {
   background-color: #f0f0f0;
   border-color: #919191;
 }
 
-/* line 17, /Users/s180024/Documents/HLO static/scss/modules/_buttons.scss */
+/* line 19, /Users/s180024/Documents/HLO static/scss/modules/_buttons.scss */
 .home-buttons .btn {
   margin-right: 15px;
   padding: 12px 30px;
 }
 
-/* line 22, /Users/s180024/Documents/HLO static/scss/modules/_buttons.scss */
+/* line 24, /Users/s180024/Documents/HLO static/scss/modules/_buttons.scss */
 .home-buttons .btn-default {
   background-color: transparent;
   border-color: #FEFEFE;
@@ -159,13 +239,18 @@ p {
   transition: background 0.2s linear;
 }
 
-/* line 29, /Users/s180024/Documents/HLO static/scss/modules/_buttons.scss */
+/* line 31, /Users/s180024/Documents/HLO static/scss/modules/_buttons.scss */
 .home-buttons .btn-default:hover {
   background-color: #FEFEFE;
   color: #000000;
 }
 
-/* LAYOUTS - header, footer, navbar... */
+/* line 38, /Users/s180024/Documents/HLO static/scss/modules/_buttons.scss */
+.pricing-table .btn {
+  padding: 15px 70px;
+}
+
+/* LAYOUTS - found on every page: header, footer, navbar... */
 /* get the size of the navbar right */
 /* line 2, /Users/s180024/Documents/HLO static/scss/layouts/_navbar.scss */
 .navbar {
@@ -236,6 +321,47 @@ p {
 /* line 56, /Users/s180024/Documents/HLO static/scss/layouts/_navbar.scss */
 .navbar-divider {
   line-height: 70px;
+}
+
+/* line 1, /Users/s180024/Documents/HLO static/scss/layouts/_footer.scss */
+.footer-top {
+  background-color: #424242;
+  color: #ffffff;
+}
+
+/* line 5, /Users/s180024/Documents/HLO static/scss/layouts/_footer.scss */
+.footer-top .row {
+  padding: 50px;
+}
+
+/* line 9, /Users/s180024/Documents/HLO static/scss/layouts/_footer.scss */
+.footer-top h3 {
+  font-weight: bold;
+}
+
+/* line 13, /Users/s180024/Documents/HLO static/scss/layouts/_footer.scss */
+.footer-top li {
+  line-height: 1.6;
+}
+
+/* line 17, /Users/s180024/Documents/HLO static/scss/layouts/_footer.scss */
+.footer-top .logo-container {
+  text-align: right;
+  padding-top: 180px;
+}
+
+/* line 22, /Users/s180024/Documents/HLO static/scss/layouts/_footer.scss */
+.footer-top .footer-logo {
+  height: 40px;
+  display: inline-block;
+  padding: 0px 12px;
+}
+
+/* line 29, /Users/s180024/Documents/HLO static/scss/layouts/_footer.scss */
+.footer-bottom {
+  background-color: #1B1B1B;
+  color: #ffffff;
+  padding: 20px 0px 10px 0px;
 }
 
 /*# sourceMappingURL=../css/main.map */

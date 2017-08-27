@@ -1,0 +1,36 @@
+.pricings {
+    background: linear-gradient($red, $darkred); /* Standard syntax */
+    color: $purewhite;
+    text-align: center;
+    padding: 50px 0px;
+}
+
+.pricing-table {
+    margin-top: 40px;
+    color: $pureblack;
+    padding: 30px 150px;
+
+    .free-plan, .partner-plan, .entrepreneur-plan {
+        background-color: $white;
+        padding: 40px;
+    }
+
+    .entrepreneur-plan {
+        margin-top: -20px;
+        padding-bottom: 55px;
+    }
+
+    .price-label {
+        color: $darkpink;
+        font-size: 70px;
+    }
+
+    .plan-features {
+        padding: 20px 0px;
+    }
+}
+
+.insurance {
+    padding: 40px 120px 10px 120px; /* top right bottom left */
+    opacity: 0.7;
+}

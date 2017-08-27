@@ -3,11 +3,13 @@
     border-radius: 8px;
 }
 
+/* primary CTA */
 .btn-success {
     background-color: $green;
-    border-color: $darkgreen;
+    border-color: $green;
 }
 
+/* secondary CTA */
 .btn-default {
     background-color: $lightgrey;
     border-color: $mediumgrey;
@@ -29,5 +31,11 @@
     .btn-default:hover{
         background-color: $white;
         color: $pureblack;
+    }
+}
+
+.pricing-table {
+    .btn {
+        padding: 15px 70px;
     }
 }

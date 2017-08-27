@@ -1,12 +1,13 @@
 .pink-bar {
-    background-color: $pink;
+    background-color: $darkgreen;
     padding: 10px 40px;
+    color: $purewhite;
 
     .col-sm-8 {
         text-align: right;
     }
 
     a {
-        color: $pureblack;
+        color: $purewhite;
     }
 }
