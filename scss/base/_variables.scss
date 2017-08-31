@@ -2,12 +2,13 @@ $font-stack: NotoSans, Helvetica;
 
 /* primary colors */
 $red: #F44336;
-$pink: #FCE4EC;
+$pink: #F06292;
+$lightpink: #FCE4EC;
 $white: #FEFEFE;
 $black: #1B1B1B;
-$green: #43A047;
 
 /* secondary colors */
+$green: #43A047;
 $darkgreen: #1B5E20;
 $lightgrey: #f0f0f0;
 $mediumgrey: #919191;
@@ -17,9 +18,14 @@ $grey: #424242;
 $yellow: #FFC107;
 $darkpink: #E91E63;
 $darkred: #B71C1C;
-$darkblue: #3949AB;
+$blue: #3949AB;
 $lightblue: #4FC3F7;
+$darkblue: #1A237E;
 
-/* body texts */
+
+/* body texts WITH 87% OPACITY */
 $pureblack: #000000;
 $purewhite: #ffffff;
+
+/* hovered buttons */
+$primaryhover: rgba(240, 98, 146, 0.9);

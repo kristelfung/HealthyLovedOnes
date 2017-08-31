@@ -1,5 +1,5 @@
 .pricings {
-    background: linear-gradient($red, $darkred); /* Standard syntax */
+    background: linear-gradient($blue, $darkblue); /* Standard syntax */
     color: $purewhite;
     text-align: center;
     padding: 50px 0px;
@@ -21,7 +21,7 @@
     }
 
     .price-label {
-        color: $darkpink;
+        color: $darkred;
         font-size: 70px;
     }
 

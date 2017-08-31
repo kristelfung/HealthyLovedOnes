@@ -7,7 +7,8 @@
 /* primary colors */
 /* secondary colors */
 /* tertiary colors */
-/* body texts */
+/* body texts WITH 87% OPACITY */
+/* hovered buttons */
 @font-face {
   font-family: "NotoSans";
   src: url("../fonts/NotoSans/NotoSans-Regular.eot?") format("eot"), url("../fonts/NotoSans/NotoSans-Regular.ttf") format("truetype"), url("../fonts/NotoSans/NotoSans-Regular.svg#NotoSans") format("svg");
@@ -114,19 +115,19 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /* line 1, /Users/s180024/Documents/HLO static/scss/modules/_homebar.scss */
-.pink-bar {
-  background-color: #1B5E20;
+.blue-bar {
+  background-color: #3949AB;
   padding: 10px 40px;
   color: #ffffff;
 }
 
 /* line 6, /Users/s180024/Documents/HLO static/scss/modules/_homebar.scss */
-.pink-bar .col-sm-8 {
+.blue-bar .col-sm-8 {
   text-align: right;
 }
 
 /* line 10, /Users/s180024/Documents/HLO static/scss/modules/_homebar.scss */
-.pink-bar a {
+.blue-bar a {
   color: #ffffff;
 }
 
@@ -144,7 +145,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* line 1, /Users/s180024/Documents/HLO static/scss/modules/_pricings.scss */
 .pricings {
-  background: linear-gradient(#F44336, #B71C1C);
+  background: linear-gradient(#3949AB, #1A237E);
   /* Standard syntax */
   color: #ffffff;
   text-align: center;
@@ -172,7 +173,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* line 23, /Users/s180024/Documents/HLO static/scss/modules/_pricings.scss */
 .pricing-table .price-label {
-  color: #E91E63;
+  color: #B71C1C;
   font-size: 70px;
 }
 
@@ -213,25 +214,37 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* primary CTA */
 /* line 7, /Users/s180024/Documents/HLO static/scss/modules/_buttons.scss */
-.btn-success {
-  background-color: #43A047;
-  border-color: #43A047;
+.btn-primary {
+  background-color: #F06292;
+  border-color: #F06292;
+}
+
+/* line 12, /Users/s180024/Documents/HLO static/scss/modules/_buttons.scss */
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus, .btn-primary:active:hover {
+  background-color: rgba(240, 98, 146, 0.9);
+  border-color: rgba(240, 98, 146, 0.9);
 }
 
 /* secondary CTA */
-/* line 13, /Users/s180024/Documents/HLO static/scss/modules/_buttons.scss */
+/* line 18, /Users/s180024/Documents/HLO static/scss/modules/_buttons.scss */
 .btn-default {
   background-color: #f0f0f0;
   border-color: #919191;
 }
 
-/* line 19, /Users/s180024/Documents/HLO static/scss/modules/_buttons.scss */
+/* line 23, /Users/s180024/Documents/HLO static/scss/modules/_buttons.scss */
+.home-buttons {
+  /* larger home buttons */
+  /* secondary CTA white border on home page */
+}
+
+/* line 25, /Users/s180024/Documents/HLO static/scss/modules/_buttons.scss */
 .home-buttons .btn {
   margin-right: 15px;
   padding: 12px 30px;
 }
 
-/* line 24, /Users/s180024/Documents/HLO static/scss/modules/_buttons.scss */
+/* line 31, /Users/s180024/Documents/HLO static/scss/modules/_buttons.scss */
 .home-buttons .btn-default {
   background-color: transparent;
   border-color: #FEFEFE;
@@ -239,13 +252,13 @@ h1, h2, h3, h4, h5, h6, p {
   transition: background 0.2s linear;
 }
 
-/* line 31, /Users/s180024/Documents/HLO static/scss/modules/_buttons.scss */
+/* line 38, /Users/s180024/Documents/HLO static/scss/modules/_buttons.scss */
 .home-buttons .btn-default:hover {
   background-color: #FEFEFE;
   color: #000000;
 }
 
-/* line 38, /Users/s180024/Documents/HLO static/scss/modules/_buttons.scss */
+/* line 45, /Users/s180024/Documents/HLO static/scss/modules/_buttons.scss */
 .pricing-table .btn {
   padding: 15px 70px;
 }
@@ -273,52 +286,65 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /* line 19, /Users/s180024/Documents/HLO static/scss/layouts/_navbar.scss */
+.navbar-default .navbar-nav > .open {
+  /* dropdown */
+}
+
+/* line 20, /Users/s180024/Documents/HLO static/scss/layouts/_navbar.scss */
+.navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open a:hover {
+  background-color: transparent;
+  color: #424242;
+}
+
+/* line 25, /Users/s180024/Documents/HLO static/scss/layouts/_navbar.scss */
 .navbar-default .navbar-nav > li {
   padding: 0px 3px 0px 3px;
 }
 
-/* line 21, /Users/s180024/Documents/HLO static/scss/layouts/_navbar.scss */
+/* line 27, /Users/s180024/Documents/HLO static/scss/layouts/_navbar.scss */
 .navbar-default .navbar-nav > li > a {
-  color: #333;
+  /* link color */
+  color: #424242;
 }
 
-/* line 24, /Users/s180024/Documents/HLO static/scss/layouts/_navbar.scss */
-.navbar-default .navbar-nav > li > a:hover {
-  color: #777;
+/* line 30, /Users/s180024/Documents/HLO static/scss/layouts/_navbar.scss */
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li a:focus {
+  /* link color on hover */
+  color: #424242;
 }
 
-/* line 29, /Users/s180024/Documents/HLO static/scss/layouts/_navbar.scss */
+/* line 34, /Users/s180024/Documents/HLO static/scss/layouts/_navbar.scss */
+.navbar-default .navbar-nav > .active {
+  /* current link is the page u are on */
+}
+
+/* line 35, /Users/s180024/Documents/HLO static/scss/layouts/_navbar.scss */
 .navbar-default .navbar-nav > .active > a {
   background-color: transparent;
-  color: #333;
+  color: #424242;
 }
 
-/* line 33, /Users/s180024/Documents/HLO static/scss/layouts/_navbar.scss */
-.navbar-default .navbar-nav > .active > a:hover {
+/* line 39, /Users/s180024/Documents/HLO static/scss/layouts/_navbar.scss */
+.navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active a:focus {
   background-color: transparent;
-  color: #777;
-}
-
-/* line 37, /Users/s180024/Documents/HLO static/scss/layouts/_navbar.scss */
-.navbar-default .navbar-nav > .active > a:focus {
-  background-color: transparent;
+  color: #424242;
 }
 
 /* logo styling */
-/* line 45, /Users/s180024/Documents/HLO static/scss/layouts/_navbar.scss */
+/* line 48, /Users/s180024/Documents/HLO static/scss/layouts/_navbar.scss */
 .navbar-brand {
   padding: 0px;
   min-height: 70px;
 }
 
-/* line 50, /Users/s180024/Documents/HLO static/scss/layouts/_navbar.scss */
+/* line 53, /Users/s180024/Documents/HLO static/scss/layouts/_navbar.scss */
 .logo {
   height: 100%;
   padding: 10px 5px 10px 5px;
 }
 
 /* navbar divider the ||| */
-/* line 56, /Users/s180024/Documents/HLO static/scss/layouts/_navbar.scss */
+/* line 59, /Users/s180024/Documents/HLO static/scss/layouts/_navbar.scss */
 .navbar-divider {
   line-height: 70px;
 }

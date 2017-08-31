@@ -4,9 +4,14 @@
 }
 
 /* primary CTA */
-.btn-success {
-    background-color: $green;
-    border-color: $green;
+.btn-primary {
+    background-color: $pink;
+    border-color: $pink;
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus, .btn-primary:active:hover {
+      background-color: $primaryhover;
+      border-color: $primaryhover;
 }
 
 /* secondary CTA */
@@ -16,11 +21,13 @@
 }
 
 .home-buttons {
+    /* larger home buttons */
     .btn {
         margin-right: 15px;
         padding: 12px 30px;
     }
 
+    /* secondary CTA white border on home page */
     .btn-default {
         background-color: transparent;
         border-color: $white;

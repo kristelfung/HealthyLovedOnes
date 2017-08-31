@@ -16,26 +16,29 @@
     background-color: transparent;
     border: none;
     .navbar-nav {
-        > li {
-            padding: 0px 3px 0px 3px;
-            > a {
-                color: #333;
-            }
-            > a:hover {
-                color: #777;
+        > .open { /* dropdown */
+            > a:focus, a:hover {
+                background-color: transparent;
+                color: $grey;
             }
         }
-        > .active {
+        > li {
+            padding: 0px 3px 0px 3px;
+            > a { /* link color */
+                color: $grey;
+            }
+            > a:hover, a:focus { /* link color on hover */
+                color: $grey;
+            }
+        }
+        > .active { /* current link is the page u are on */
             > a {
                 background-color: transparent;
-                color: #333;
+                color: $grey;
             }
-            > a:hover {
+            > a:hover, a:focus {
                 background-color: transparent;
-                color: #777;
-            }
-            > a:focus {
-                background-color: transparent;
+                color: $grey;
             }
         }
     }
