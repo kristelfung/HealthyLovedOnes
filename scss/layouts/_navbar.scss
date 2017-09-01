@@ -1,4 +1,4 @@
-/* get the size of the navbar right */
+/* get the sizes of the navbar right */
 .navbar {
     min-height: 70px;
     margin-bottom: 0px;
@@ -8,35 +8,57 @@
             padding-top: 0px;
             padding-bottom: 0px;
         }
+        /* style the dropdown menu, detach from navbar */
+        .dropdown-menu {
+            margin-top: 15px;
+            border-radius: 4px; /* round menu */
+
+            li a {
+                line-height: 45px;
+            }
+        }
+
+        /* carrot arrow */
+        .dropdown-menu:after {
+            content:"";
+            position: absolute;
+            right: 5px;
+            top: -8px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 17px 17px 17px;
+            border-color: transparent transparent $white transparent;
+            z-index:9998;
+        }
     }
 }
 
-/* styles of navbar */
+/* styles of the default white */
 .navbar-default {
     background-color: transparent;
     border: none;
-    .navbar-nav {
-        > .open { /* dropdown */
-            > a:focus, a:hover {
+    .navbar-nav, .nav {
+        > .open { /* dropdown is OPEN */
+            > a, a:focus, a:hover, a:active {
+                background-color: transparent;
+                color: $grey;
+            }
+        }
+        > li:hover, li:active, li:focus { /* when dropdown is hovered/clicked, style the <a> link */
+            > a, a:hover {
                 background-color: transparent;
                 color: $grey;
             }
         }
         > li {
             padding: 0px 3px 0px 3px;
-            > a { /* link color */
-                color: $grey;
-            }
-            > a:hover, a:focus { /* link color on hover */
+            > a, a:hover, a:focus { /* link color on hover */
                 color: $grey;
             }
         }
         > .active { /* current link is the page u are on */
-            > a {
-                background-color: transparent;
-                color: $grey;
-            }
-            > a:hover, a:focus {
+            > a, a:hover, a:focus {
                 background-color: transparent;
                 color: $grey;
             }

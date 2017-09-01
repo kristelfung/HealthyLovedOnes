@@ -264,11 +264,17 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /* LAYOUTS - found on every page: header, footer, navbar... */
-/* get the size of the navbar right */
+/* get the sizes of the navbar right */
 /* line 2, /Users/s180024/Documents/HLO static/scss/layouts/_navbar.scss */
 .navbar {
   min-height: 70px;
   margin-bottom: 0px;
+}
+
+/* line 5, /Users/s180024/Documents/HLO static/scss/layouts/_navbar.scss */
+.navbar li {
+  /* style the dropdown menu, detach from navbar */
+  /* carrot arrow */
 }
 
 /* line 6, /Users/s180024/Documents/HLO static/scss/layouts/_navbar.scss */
@@ -278,73 +284,98 @@ h1, h2, h3, h4, h5, h6, p {
   padding-bottom: 0px;
 }
 
-/* styles of navbar */
-/* line 15, /Users/s180024/Documents/HLO static/scss/layouts/_navbar.scss */
+/* line 12, /Users/s180024/Documents/HLO static/scss/layouts/_navbar.scss */
+.navbar li .dropdown-menu {
+  margin-top: 15px;
+  border-radius: 4px;
+  /* round menu */
+}
+
+/* line 16, /Users/s180024/Documents/HLO static/scss/layouts/_navbar.scss */
+.navbar li .dropdown-menu li a {
+  line-height: 45px;
+}
+
+/* line 22, /Users/s180024/Documents/HLO static/scss/layouts/_navbar.scss */
+.navbar li .dropdown-menu:after {
+  content: "";
+  position: absolute;
+  right: 5px;
+  top: -8px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 17px 17px 17px;
+  border-color: transparent transparent #FEFEFE transparent;
+  z-index: 9998;
+}
+
+/* styles of the default white */
+/* line 38, /Users/s180024/Documents/HLO static/scss/layouts/_navbar.scss */
 .navbar-default {
   background-color: transparent;
   border: none;
 }
 
-/* line 19, /Users/s180024/Documents/HLO static/scss/layouts/_navbar.scss */
-.navbar-default .navbar-nav > .open {
-  /* dropdown */
+/* line 42, /Users/s180024/Documents/HLO static/scss/layouts/_navbar.scss */
+.navbar-default .navbar-nav > .open, .navbar-default .nav > .open {
+  /* dropdown is OPEN */
 }
 
-/* line 20, /Users/s180024/Documents/HLO static/scss/layouts/_navbar.scss */
-.navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open a:hover {
+/* line 43, /Users/s180024/Documents/HLO static/scss/layouts/_navbar.scss */
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open a:focus, .navbar-default .navbar-nav > .open a:hover, .navbar-default .navbar-nav > .open a:active, .navbar-default .nav > .open > a, .navbar-default .nav > .open a:focus, .navbar-default .nav > .open a:hover, .navbar-default .nav > .open a:active {
   background-color: transparent;
   color: #424242;
 }
 
-/* line 25, /Users/s180024/Documents/HLO static/scss/layouts/_navbar.scss */
-.navbar-default .navbar-nav > li {
-  padding: 0px 3px 0px 3px;
+/* line 48, /Users/s180024/Documents/HLO static/scss/layouts/_navbar.scss */
+.navbar-default .navbar-nav > li:hover, .navbar-default .navbar-nav li:active, .navbar-default .navbar-nav li:focus, .navbar-default .nav > li:hover, .navbar-default .nav li:active, .navbar-default .nav li:focus {
+  /* when dropdown is hovered/clicked, style the <a> link */
 }
 
-/* line 27, /Users/s180024/Documents/HLO static/scss/layouts/_navbar.scss */
-.navbar-default .navbar-nav > li > a {
-  /* link color */
+/* line 49, /Users/s180024/Documents/HLO static/scss/layouts/_navbar.scss */
+.navbar-default .navbar-nav > li:hover > a, .navbar-default .navbar-nav > li:hover a:hover, .navbar-default .navbar-nav li:active > a, .navbar-default .navbar-nav li:active a:hover, .navbar-default .navbar-nav li:focus > a, .navbar-default .navbar-nav li:focus a:hover, .navbar-default .nav > li:hover > a, .navbar-default .nav > li:hover a:hover, .navbar-default .nav li:active > a, .navbar-default .nav li:active a:hover, .navbar-default .nav li:focus > a, .navbar-default .nav li:focus a:hover {
+  background-color: transparent;
   color: #424242;
 }
 
-/* line 30, /Users/s180024/Documents/HLO static/scss/layouts/_navbar.scss */
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li a:focus {
+/* line 54, /Users/s180024/Documents/HLO static/scss/layouts/_navbar.scss */
+.navbar-default .navbar-nav > li, .navbar-default .nav > li {
+  padding: 0px 3px 0px 3px;
+}
+
+/* line 56, /Users/s180024/Documents/HLO static/scss/layouts/_navbar.scss */
+.navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li a:hover, .navbar-default .navbar-nav > li a:focus, .navbar-default .nav > li > a, .navbar-default .nav > li a:hover, .navbar-default .nav > li a:focus {
   /* link color on hover */
   color: #424242;
 }
 
-/* line 34, /Users/s180024/Documents/HLO static/scss/layouts/_navbar.scss */
-.navbar-default .navbar-nav > .active {
+/* line 60, /Users/s180024/Documents/HLO static/scss/layouts/_navbar.scss */
+.navbar-default .navbar-nav > .active, .navbar-default .nav > .active {
   /* current link is the page u are on */
 }
 
-/* line 35, /Users/s180024/Documents/HLO static/scss/layouts/_navbar.scss */
-.navbar-default .navbar-nav > .active > a {
-  background-color: transparent;
-  color: #424242;
-}
-
-/* line 39, /Users/s180024/Documents/HLO static/scss/layouts/_navbar.scss */
-.navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active a:focus {
+/* line 61, /Users/s180024/Documents/HLO static/scss/layouts/_navbar.scss */
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active a:hover, .navbar-default .navbar-nav > .active a:focus, .navbar-default .nav > .active > a, .navbar-default .nav > .active a:hover, .navbar-default .nav > .active a:focus {
   background-color: transparent;
   color: #424242;
 }
 
 /* logo styling */
-/* line 48, /Users/s180024/Documents/HLO static/scss/layouts/_navbar.scss */
+/* line 70, /Users/s180024/Documents/HLO static/scss/layouts/_navbar.scss */
 .navbar-brand {
   padding: 0px;
   min-height: 70px;
 }
 
-/* line 53, /Users/s180024/Documents/HLO static/scss/layouts/_navbar.scss */
+/* line 75, /Users/s180024/Documents/HLO static/scss/layouts/_navbar.scss */
 .logo {
   height: 100%;
   padding: 10px 5px 10px 5px;
 }
 
 /* navbar divider the ||| */
-/* line 59, /Users/s180024/Documents/HLO static/scss/layouts/_navbar.scss */
+/* line 81, /Users/s180024/Documents/HLO static/scss/layouts/_navbar.scss */
 .navbar-divider {
   line-height: 70px;
 }
