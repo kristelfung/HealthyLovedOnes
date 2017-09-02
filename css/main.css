@@ -82,7 +82,7 @@ h1, h2, h3, h4, h5, h6, p {
 .jumbotron {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/home-background.jpg");
   background-size: cover;
-  background-position: center bottom;
+  background-position: center center;
   min-height: 500px;
   color: #ffffff;
   margin-bottom: 0px;
@@ -115,19 +115,19 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /* line 1, /Users/s180024/Documents/HLO static/scss/modules/_homebar.scss */
-.blue-bar {
-  background-color: #3949AB;
+.green-bar {
+  background-color: #174c1b;
   padding: 10px 40px;
   color: #ffffff;
 }
 
 /* line 6, /Users/s180024/Documents/HLO static/scss/modules/_homebar.scss */
-.blue-bar .col-sm-8 {
+.green-bar .col-sm-8 {
   text-align: right;
 }
 
 /* line 10, /Users/s180024/Documents/HLO static/scss/modules/_homebar.scss */
-.blue-bar a {
+.green-bar a {
   color: #ffffff;
 }
 
@@ -145,7 +145,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* line 1, /Users/s180024/Documents/HLO static/scss/modules/_pricings.scss */
 .pricings {
-  background: linear-gradient(#3949AB, #1A237E);
+  background: linear-gradient(#388E3C, #174c1b);
   /* Standard syntax */
   color: #ffffff;
   text-align: center;
@@ -272,32 +272,32 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /* line 5, /Users/s180024/Documents/HLO static/scss/layouts/_navbar.scss */
-.navbar li {
+.navbar .navbar-nav {
   /* style the dropdown menu, detach from navbar */
   /* carrot arrow */
 }
 
 /* line 6, /Users/s180024/Documents/HLO static/scss/layouts/_navbar.scss */
-.navbar li a {
+.navbar .navbar-nav a {
   line-height: 70px;
   padding-top: 0px;
   padding-bottom: 0px;
 }
 
 /* line 12, /Users/s180024/Documents/HLO static/scss/layouts/_navbar.scss */
-.navbar li .dropdown-menu {
+.navbar .navbar-nav .dropdown-menu {
   margin-top: 15px;
   border-radius: 4px;
   /* round menu */
 }
 
 /* line 16, /Users/s180024/Documents/HLO static/scss/layouts/_navbar.scss */
-.navbar li .dropdown-menu li a {
+.navbar .navbar-nav .dropdown-menu > li > a {
   line-height: 45px;
 }
 
 /* line 22, /Users/s180024/Documents/HLO static/scss/layouts/_navbar.scss */
-.navbar li .dropdown-menu:after {
+.navbar .navbar-nav .dropdown-menu:after {
   content: "";
   position: absolute;
   right: 5px;

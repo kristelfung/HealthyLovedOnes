@@ -2,7 +2,7 @@
 .navbar {
     min-height: 70px;
     margin-bottom: 0px;
-    li {
+    .navbar-nav {
         a {
             line-height: 70px;
             padding-top: 0px;
@@ -13,7 +13,7 @@
             margin-top: 15px;
             border-radius: 4px; /* round menu */
 
-            li a {
+            > li > a {
                 line-height: 45px;
             }
         }
