@@ -1,0 +1,37 @@
+.profile-pic {
+    position: absolute; /* parent div is relative */
+    background-image: url('../images/profile/dp.png');
+    background-size: cover;
+    background-position: center center;
+    border-radius: 50%;
+    height: 220px;
+    width: 220px;
+    left: 10%;
+    top: 50%;
+    border: 8px solid $lightgrey;
+}
+
+/* TODO: fixlater */
+.favorite {
+    position: absolute;
+    background-color: $white;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    top: 56%;
+    left: 24%;
+
+    .fa-plus {
+        color: $mediumgrey;
+        margin-top: 22%;
+        margin-left: 25%;
+        font-size: 24px;
+    }
+
+    .fa-heart {
+        color: $red;
+        margin-top: 28%;
+        margin-left: 25%;
+        font-size: 20px;
+    }
+}

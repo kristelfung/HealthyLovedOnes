@@ -1,6 +1,7 @@
-/* green button */
+/* button */
 .btn {
-    border-radius: 8px;
+    border-radius: 5px;
+    padding: 8px 15px;
 }
 
 /* primary CTA */
@@ -17,7 +18,25 @@
 /* secondary CTA */
 .btn-default {
     background-color: $lightgrey;
-    border-color: $mediumgrey;
+    border-color: $lightgrey;
+}
+
+.btn-default:hover, .btn-default:active, .btn-default:focus, .btn-default:active:hover {
+    background-color: $defaulthover;
+    border-color: $defaulthover;
+}
+
+/* secondary CTA, clear version */
+.btn-default-clear {
+    background-color: transparent;
+    border-color: $white;
+    color: $purewhite;
+    transition: background 0.2s linear;
+}
+
+.btn-default-clear:hover, .btn-default-clear:active, .btn-default-clear:focus, .btn-default-clear:active:hover{
+    background-color: $white;
+    color: $pureblack;
 }
 
 .home-buttons {
@@ -25,19 +44,7 @@
     .btn {
         margin-right: 15px;
         padding: 12px 30px;
-    }
-
-    /* secondary CTA white border on home page */
-    .btn-default {
-        background-color: transparent;
-        border-color: $white;
-        color: $purewhite;
-        transition: background 0.2s linear;
-    }
-
-    .btn-default:hover{
-        background-color: $white;
-        color: $pureblack;
+        border-radius: 8px;
     }
 }
 

@@ -1,0 +1,39 @@
+.profile-body {
+    padding: 0px 60px 30px 60px; /* top right bototm left */
+    border-right: 1px solid $mediumgrey;
+}
+
+.profile-section {
+    padding: 10px 0px;
+}
+
+.label-success {
+    background-color: $darkgreen;
+    margin-left: 325px;
+}
+
+.table>tbody>tr>td {
+    line-height: 2.2;
+}
+
+.reviewer-info {
+    margin-top: 30px;
+}
+
+.review-pic {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 15px;
+}
+
+.review-desc {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.review-date {
+    text-align: right;
+    color: $pureblack;
+}

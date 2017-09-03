@@ -65,19 +65,19 @@ hr {
   opacity: 0.4;
 }
 
-/* ADD LI???? */
+/* TODO: ADD LI???? */
 /* line 46, /Users/s180024/Documents/HLO static/scss/base/_base.scss */
 h1, h2, h3, h4, h5, h6, p {
   opacity: 0.87;
-  line-height: 1.2;
 }
 
-/* line 51, /Users/s180024/Documents/HLO static/scss/base/_base.scss */
+/* line 50, /Users/s180024/Documents/HLO static/scss/base/_base.scss */
 .text-center {
   text-align: center;
 }
 
 /* MODULES - jumbotron, buttons, pricings... */
+/* home */
 /* line 1, /Users/s180024/Documents/HLO static/scss/modules/_jumbotron.scss */
 .jumbotron {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/home-background.jpg");
@@ -186,7 +186,7 @@ h1, h2, h3, h4, h5, h6, p {
 .insurance {
   padding: 40px 120px 10px 120px;
   /* top right bottom left */
-  opacity: 0.7;
+  opacity: 0.75;
 }
 
 /* line 1, /Users/s180024/Documents/HLO static/scss/modules/_carousel.scss */
@@ -197,7 +197,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* line 1, /Users/s180024/Documents/HLO static/scss/modules/_featured.scss */
 .featured {
-  background-color: #f0f0f0;
+  background-color: #efefef;
   padding: 40px;
 }
 
@@ -206,61 +206,237 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 20px;
 }
 
-/* green button */
+/* button */
 /* line 2, /Users/s180024/Documents/HLO static/scss/modules/_buttons.scss */
 .btn {
-  border-radius: 8px;
+  border-radius: 5px;
+  padding: 8px 15px;
 }
 
 /* primary CTA */
-/* line 7, /Users/s180024/Documents/HLO static/scss/modules/_buttons.scss */
+/* line 8, /Users/s180024/Documents/HLO static/scss/modules/_buttons.scss */
 .btn-primary {
   background-color: #F06292;
   border-color: #F06292;
 }
 
-/* line 12, /Users/s180024/Documents/HLO static/scss/modules/_buttons.scss */
+/* line 13, /Users/s180024/Documents/HLO static/scss/modules/_buttons.scss */
 .btn-primary:hover, .btn-primary:active, .btn-primary:focus, .btn-primary:active:hover {
   background-color: rgba(240, 98, 146, 0.9);
   border-color: rgba(240, 98, 146, 0.9);
 }
 
 /* secondary CTA */
-/* line 18, /Users/s180024/Documents/HLO static/scss/modules/_buttons.scss */
+/* line 19, /Users/s180024/Documents/HLO static/scss/modules/_buttons.scss */
 .btn-default {
-  background-color: #f0f0f0;
-  border-color: #919191;
+  background-color: #efefef;
+  border-color: #efefef;
 }
 
-/* line 23, /Users/s180024/Documents/HLO static/scss/modules/_buttons.scss */
-.home-buttons {
-  /* larger home buttons */
-  /* secondary CTA white border on home page */
+/* line 24, /Users/s180024/Documents/HLO static/scss/modules/_buttons.scss */
+.btn-default:hover, .btn-default:active, .btn-default:focus, .btn-default:active:hover {
+  background-color: rgba(239, 239, 239, 0.9);
+  border-color: rgba(239, 239, 239, 0.9);
 }
 
-/* line 25, /Users/s180024/Documents/HLO static/scss/modules/_buttons.scss */
-.home-buttons .btn {
-  margin-right: 15px;
-  padding: 12px 30px;
-}
-
-/* line 31, /Users/s180024/Documents/HLO static/scss/modules/_buttons.scss */
-.home-buttons .btn-default {
+/* secondary CTA, clear version */
+/* line 30, /Users/s180024/Documents/HLO static/scss/modules/_buttons.scss */
+.btn-default-clear {
   background-color: transparent;
   border-color: #FEFEFE;
   color: #ffffff;
   transition: background 0.2s linear;
 }
 
-/* line 38, /Users/s180024/Documents/HLO static/scss/modules/_buttons.scss */
-.home-buttons .btn-default:hover {
+/* line 37, /Users/s180024/Documents/HLO static/scss/modules/_buttons.scss */
+.btn-default-clear:hover, .btn-default-clear:active, .btn-default-clear:focus, .btn-default-clear:active:hover {
   background-color: #FEFEFE;
   color: #000000;
 }
 
-/* line 45, /Users/s180024/Documents/HLO static/scss/modules/_buttons.scss */
+/* line 42, /Users/s180024/Documents/HLO static/scss/modules/_buttons.scss */
+.home-buttons {
+  /* larger home buttons */
+}
+
+/* line 44, /Users/s180024/Documents/HLO static/scss/modules/_buttons.scss */
+.home-buttons .btn {
+  margin-right: 15px;
+  padding: 12px 30px;
+  border-radius: 8px;
+}
+
+/* line 52, /Users/s180024/Documents/HLO static/scss/modules/_buttons.scss */
 .pricing-table .btn {
   padding: 15px 70px;
+}
+
+/* profile */
+/* line 1, /Users/s180024/Documents/HLO static/scss/modules/_profilecover.scss */
+.profile-cover {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/profile/cov.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 300px;
+}
+
+/* line 1, /Users/s180024/Documents/HLO static/scss/modules/_profilepic.scss */
+.profile-pic {
+  position: absolute;
+  /* parent div is relative */
+  background-image: url("../images/profile/dp.png");
+  background-size: cover;
+  background-position: center center;
+  border-radius: 50%;
+  height: 220px;
+  width: 220px;
+  left: 10%;
+  top: 50%;
+  border: 8px solid #efefef;
+}
+
+/* TODO: fixlater */
+/* line 15, /Users/s180024/Documents/HLO static/scss/modules/_profilepic.scss */
+.favorite {
+  position: absolute;
+  background-color: #FEFEFE;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  top: 56%;
+  left: 24%;
+}
+
+/* line 24, /Users/s180024/Documents/HLO static/scss/modules/_profilepic.scss */
+.favorite .fa-plus {
+  color: #919191;
+  margin-top: 22%;
+  margin-left: 25%;
+  font-size: 24px;
+}
+
+/* line 31, /Users/s180024/Documents/HLO static/scss/modules/_profilepic.scss */
+.favorite .fa-heart {
+  color: #E53935;
+  margin-top: 28%;
+  margin-left: 25%;
+  font-size: 20px;
+}
+
+/* line 1, /Users/s180024/Documents/HLO static/scss/modules/_profilename.scss */
+.name {
+  position: absolute;
+  color: #ffffff;
+  top: 65%;
+  left: 30%;
+}
+
+/* line 7, /Users/s180024/Documents/HLO static/scss/modules/_profilename.scss */
+.name h2 {
+  font-weight: bold;
+}
+
+/* line 12, /Users/s180024/Documents/HLO static/scss/modules/_profilename.scss */
+.rating {
+  position: absolute;
+  top: 88%;
+  left: 30%;
+  font-size: 20px;
+}
+
+/* line 19, /Users/s180024/Documents/HLO static/scss/modules/_profilename.scss */
+.rating a {
+  color: #ffffff;
+}
+
+/* TODO: change this later lmfao */
+/* line 24, /Users/s180024/Documents/HLO static/scss/modules/_profilename.scss */
+.buttons {
+  position: absolute;
+  top: 83%;
+  left: 80%;
+}
+
+/* line 29, /Users/s180024/Documents/HLO static/scss/modules/_profilename.scss */
+.buttons .btn {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/* black bar */
+/* line 2, /Users/s180024/Documents/HLO static/scss/modules/_profilesidebar.scss */
+.location-bar {
+  color: #ffffff;
+  background-color: #1B1B1B;
+  padding: 15px 25px 5px 25px;
+  /* top right bottom left */
+  margin-left: -15px;
+  /* fix until collaspe */
+}
+
+/* line 9, /Users/s180024/Documents/HLO static/scss/modules/_profilesidebar.scss */
+.sidebar-section {
+  padding: 10px 10px 0px 10px;
+}
+
+/* line 12, /Users/s180024/Documents/HLO static/scss/modules/_profilesidebar.scss */
+.sidebar-section h5 {
+  font-weight: bold;
+}
+
+/* line 17, /Users/s180024/Documents/HLO static/scss/modules/_profilesidebar.scss */
+.checks {
+  color: #388E3C;
+}
+
+/* line 1, /Users/s180024/Documents/HLO static/scss/modules/_profilebody.scss */
+.profile-body {
+  padding: 0px 60px 30px 60px;
+  /* top right bototm left */
+  border-right: 1px solid #919191;
+}
+
+/* line 6, /Users/s180024/Documents/HLO static/scss/modules/_profilebody.scss */
+.profile-section {
+  padding: 10px 0px;
+}
+
+/* line 10, /Users/s180024/Documents/HLO static/scss/modules/_profilebody.scss */
+.label-success {
+  background-color: #174c1b;
+  margin-left: 325px;
+}
+
+/* line 15, /Users/s180024/Documents/HLO static/scss/modules/_profilebody.scss */
+.table > tbody > tr > td {
+  line-height: 2.2;
+}
+
+/* line 19, /Users/s180024/Documents/HLO static/scss/modules/_profilebody.scss */
+.reviewer-info {
+  margin-top: 30px;
+}
+
+/* line 23, /Users/s180024/Documents/HLO static/scss/modules/_profilebody.scss */
+.review-pic {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 15px;
+}
+
+/* line 31, /Users/s180024/Documents/HLO static/scss/modules/_profilebody.scss */
+.review-desc {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* line 36, /Users/s180024/Documents/HLO static/scss/modules/_profilebody.scss */
+.review-date {
+  text-align: right;
+  color: #000000;
 }
 
 /* LAYOUTS - found on every page: header, footer, navbar... */

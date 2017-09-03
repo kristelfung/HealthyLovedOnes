@@ -10,6 +10,7 @@
 @import 'base/_base.scss';
 
 /* MODULES - jumbotron, buttons, pricings... */
+/* home */
 @import 'modules/_jumbotron.scss';
 @import 'modules/_homebar.scss';
 @import 'modules/_homedesc.scss';
@@ -17,6 +18,13 @@
 @import 'modules/_carousel.scss';
 @import 'modules/_featured.scss';
 @import 'modules/_buttons.scss';
+
+/* profile */
+@import 'modules/_profilecover.scss';
+@import 'modules/_profilepic.scss';
+@import 'modules/_profilename.scss';
+@import 'modules/_profilesidebar.scss';
+@import 'modules/_profilebody.scss';
 
 /* LAYOUTS - found on every page: header, footer, navbar... */
 @import 'layouts/_navbar.scss';
