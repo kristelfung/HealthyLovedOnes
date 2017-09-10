@@ -5,24 +5,53 @@
     padding: 50px 0px;
 }
 
+.price-box {
+    display: inline-block;
+    text-align: left;
+    color: $darkred;
+    position: relative;
+}
+
+.dollar {
+    position: absolute;
+    margin-top: 20px;
+}
+
+.per-month {
+    color: $darkred;
+    margin-bottom: 20px;
+}
+
 .pricing-table {
+    margin: 0 auto;
     margin-top: 40px;
     color: $pureblack;
-    padding: 30px 150px;
+    padding: 30px 0px;
+    width: 80%;
 
     .free-plan, .partner-plan, .entrepreneur-plan {
         background-color: $white;
-        padding: 40px;
+        border: 1px solid $lightgrey;
+        padding: 3% 5%; /* padding of a plan */
+    }
+
+    .free-plan, .partner-plan {
+        .plan-features {
+            min-height: 130px;
+        }
     }
 
     .entrepreneur-plan {
         margin-top: -20px;
-        padding-bottom: 55px;
     }
 
     .price-label {
+        font-size: 60px;
+        margin: 10px 10px 0px 10px;
+    }
+
+    .commissions {
         color: $darkred;
-        font-size: 70px;
     }
 
     .plan-features {

@@ -1,0 +1,29 @@
+.login-background {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/login/login-background.jpg');
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    /* vertical and horizontal center */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.login-content {
+    color: $purewhite;
+
+    h1 {
+        font-size: 60px;
+    }
+}
+
+.login-logo {
+    max-width: 300px;
+}
+
+.login-buttons {
+    margin: 0 auto;
+    padding: 20px;
+    width: 250px;
+}

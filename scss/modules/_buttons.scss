@@ -34,11 +34,12 @@
     transition: background 0.2s linear;
 }
 
-.btn-default-clear:hover, .btn-default-clear:active, .btn-default-clear:focus, .btn-default-clear:active:hover{
+.btn-default-clear:hover, .btn-default-clear:active, .btn-default-clear:focus, .btn-default-clear:active:hover {
     background-color: $white;
     color: $pureblack;
 }
 
+/* button customizations for certain pages */
 .home-buttons {
     /* larger home buttons */
     .btn {
@@ -50,6 +51,17 @@
 
 .pricing-table {
     .btn {
-        padding: 15px 70px;
+        width: 80%;
+        padding: 15px 0px;
+        border-radius: 8px;
+    }
+}
+
+.login-buttons {
+    .btn {
+        padding: 20px 0px;
+        border-radius: 15px;
+        margin: 15px;
+        display: block;
     }
 }
