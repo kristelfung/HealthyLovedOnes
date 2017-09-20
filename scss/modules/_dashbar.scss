@@ -1,0 +1,17 @@
+.dashbar {
+    padding-top: 20px;
+    padding-bottom: 10px;
+
+    .col-xs-3 {
+        opacity: 0.4;
+    }
+
+    .active {
+        opacity: 1;
+    }
+}
+
+.dashboard-logo {
+    height: 40px;
+    padding: 5px;
+}

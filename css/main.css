@@ -7,8 +7,10 @@
 /* primary colors */
 /* secondary colors */
 /* tertiary colors */
-/* body texts WITH 87% OPACITY */
+/* blacks and whites */
+/* body texts*/
 /* hovered buttons */
+/* breakpoints */
 @font-face {
   font-family: "NotoSans";
   src: url("../fonts/NotoSans/NotoSans-Regular.eot?") format("eot"), url("../fonts/NotoSans/NotoSans-Regular.ttf") format("truetype"), url("../fonts/NotoSans/NotoSans-Regular.svg#NotoSans") format("svg");
@@ -25,50 +27,74 @@ html, body {
 }
 
 /* line 12, /Users/s180024/Documents/HLO static/scss/base/_base.scss */
-h2 {
-  font-size: 36px;
+h3 {
+  font-size: 26px;
 }
 
 /* line 16, /Users/s180024/Documents/HLO static/scss/base/_base.scss */
-h3 {
-  font-size: 28px;
-}
-
-/* line 20, /Users/s180024/Documents/HLO static/scss/base/_base.scss */
 h4 {
   font-size: 22px;
 }
 
-/* line 24, /Users/s180024/Documents/HLO static/scss/base/_base.scss */
+/* line 20, /Users/s180024/Documents/HLO static/scss/base/_base.scss */
 h5 {
   font-size: 16px;
 }
 
-/* line 28, /Users/s180024/Documents/HLO static/scss/base/_base.scss */
+/* line 24, /Users/s180024/Documents/HLO static/scss/base/_base.scss */
 h6 {
   font-size: 12px;
 }
 
-/* line 32, /Users/s180024/Documents/HLO static/scss/base/_base.scss */
+/* line 28, /Users/s180024/Documents/HLO static/scss/base/_base.scss */
 p {
   font-size: 14px;
 }
 
-/* line 36, /Users/s180024/Documents/HLO static/scss/base/_base.scss */
+/* line 32, /Users/s180024/Documents/HLO static/scss/base/_base.scss */
 hr {
   border-top: 1px solid #919191;
   opacity: 0.4;
 }
 
 /* TODO: ADD LI???? */
-/* line 42, /Users/s180024/Documents/HLO static/scss/base/_base.scss */
+/* line 38, /Users/s180024/Documents/HLO static/scss/base/_base.scss */
 h1, h2, h3, h4, h5, h6, p {
   opacity: 0.87;
 }
 
-/* line 46, /Users/s180024/Documents/HLO static/scss/base/_base.scss */
+/* line 42, /Users/s180024/Documents/HLO static/scss/base/_base.scss */
 .text-center {
   text-align: center;
+}
+
+/* line 46, /Users/s180024/Documents/HLO static/scss/base/_base.scss */
+.container-small {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  /* line 54, /Users/s180024/Documents/HLO static/scss/base/_base.scss */
+  .container-small {
+    width: 700px;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 60, /Users/s180024/Documents/HLO static/scss/base/_base.scss */
+  .container-small {
+    width: 700px;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* line 65, /Users/s180024/Documents/HLO static/scss/base/_base.scss */
+  .container-small {
+    width: 700px;
+  }
 }
 
 /* MODULES - jumbotron, buttons, pricings... */
@@ -184,33 +210,29 @@ h1, h2, h3, h4, h5, h6, p {
   /* padding of a plan */
 }
 
-/* line 39, /Users/s180024/Documents/HLO static/scss/modules/_pricings.scss */
-.pricing-table .free-plan .plan-features, .pricing-table .partner-plan .plan-features {
-  min-height: 130px;
-}
-
-/* line 44, /Users/s180024/Documents/HLO static/scss/modules/_pricings.scss */
+/* line 38, /Users/s180024/Documents/HLO static/scss/modules/_pricings.scss */
 .pricing-table .entrepreneur-plan {
   margin-top: -20px;
 }
 
-/* line 48, /Users/s180024/Documents/HLO static/scss/modules/_pricings.scss */
+/* line 42, /Users/s180024/Documents/HLO static/scss/modules/_pricings.scss */
 .pricing-table .price-label {
   font-size: 60px;
   margin: 10px 10px 0px 10px;
 }
 
-/* line 53, /Users/s180024/Documents/HLO static/scss/modules/_pricings.scss */
+/* line 47, /Users/s180024/Documents/HLO static/scss/modules/_pricings.scss */
 .pricing-table .commissions {
   color: #B71C1C;
 }
 
-/* line 57, /Users/s180024/Documents/HLO static/scss/modules/_pricings.scss */
+/* line 51, /Users/s180024/Documents/HLO static/scss/modules/_pricings.scss */
 .pricing-table .plan-features {
-  padding: 20px 0px;
+  padding-top: 20px;
+  padding-bottom: 30px;
 }
 
-/* line 62, /Users/s180024/Documents/HLO static/scss/modules/_pricings.scss */
+/* line 57, /Users/s180024/Documents/HLO static/scss/modules/_pricings.scss */
 .insurance {
   padding: 40px 120px 10px 120px;
   /* top right bottom left */
@@ -483,6 +505,73 @@ h1, h2, h3, h4, h5, h6, p {
   color: #000000;
 }
 
+/* dashboard */
+/* line 1, /Users/s180024/Documents/HLO static/scss/modules/_dashbar.scss */
+.dashbar {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+/* line 5, /Users/s180024/Documents/HLO static/scss/modules/_dashbar.scss */
+.dashbar .col-xs-3 {
+  opacity: 0.4;
+}
+
+/* line 9, /Users/s180024/Documents/HLO static/scss/modules/_dashbar.scss */
+.dashbar .active {
+  opacity: 1;
+}
+
+/* line 14, /Users/s180024/Documents/HLO static/scss/modules/_dashbar.scss */
+.dashboard-logo {
+  height: 40px;
+  padding: 5px;
+}
+
+/* line 1, /Users/s180024/Documents/HLO static/scss/modules/_dashbody.scss */
+.dashbody {
+  border-top: 1px solid #efefef;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+/* line 7, /Users/s180024/Documents/HLO static/scss/modules/_dashbody.scss */
+.button-col {
+  text-align: right;
+}
+
+/* line 10, /Users/s180024/Documents/HLO static/scss/modules/_dashbody.scss */
+.button-col a {
+  margin-top: 20px;
+}
+
+/* line 1, /Users/s180024/Documents/HLO static/scss/modules/_job.scss */
+.job {
+  background-color: #FCE4EC;
+  border-radius: 10px;
+  border: 1px solid #F48FB1;
+  padding: 15px 30px;
+  margin-top: 20px;
+}
+
+/* line 8, /Users/s180024/Documents/HLO static/scss/modules/_job.scss */
+.job .job-left {
+  text-align: right;
+}
+
+/* line 13, /Users/s180024/Documents/HLO static/scss/modules/_job.scss */
+.job-status {
+  height: 60px;
+  margin-top: -15px;
+}
+
+/* line 18, /Users/s180024/Documents/HLO static/scss/modules/_job.scss */
+.expand-job {
+  font-size: 40px;
+  margin-left: 10px;
+  color: #1B1B1B;
+}
+
 /* login */
 /* line 1, /Users/s180024/Documents/HLO static/scss/modules/_login.scss */
 .login-background {
@@ -519,7 +608,7 @@ h1, h2, h3, h4, h5, h6, p {
   width: 250px;
 }
 
-/* LAYOUTS - found on every page: header, footer, navbar... */
+/* LAYOUTS - : header, footer, navbar... */
 /* get the sizes of the navbar right */
 /* line 2, /Users/s180024/Documents/HLO static/scss/layouts/_navbar.scss */
 .navbar {
@@ -628,10 +717,11 @@ h1, h2, h3, h4, h5, h6, p {
 .logo {
   height: 100%;
   padding: 10px 5px 10px 5px;
+  margin-left: 5px;
 }
 
 /* navbar divider the ||| */
-/* line 81, /Users/s180024/Documents/HLO static/scss/layouts/_navbar.scss */
+/* line 82, /Users/s180024/Documents/HLO static/scss/layouts/_navbar.scss */
 .navbar-divider {
   line-height: 70px;
 }

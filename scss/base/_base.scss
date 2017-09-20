@@ -9,12 +9,8 @@ html, body {
     overflow-x: hidden;
 }
 
-h2 {
-    font-size: 36px;
-}
-
 h3 {
-    font-size: 28px;
+    font-size: 26px;
 }
 
 h4 {
@@ -45,4 +41,28 @@ h1, h2, h3, h4, h5, h6, p {
 
 .text-center {
     text-align: center;
+}
+
+.container-small {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 768px) {
+    .container-small {
+        width: 700px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container-small {
+        width: 700px;
+    }
+}
+@media (min-width: 1200px){
+    .container-small {
+        width: 700px;
+    }
 }

@@ -35,12 +35,6 @@
         padding: 3% 5%; /* padding of a plan */
     }
 
-    .free-plan, .partner-plan {
-        .plan-features {
-            min-height: 130px;
-        }
-    }
-
     .entrepreneur-plan {
         margin-top: -20px;
     }
@@ -55,7 +49,8 @@
     }
 
     .plan-features {
-        padding: 20px 0px;
+        padding-top: 20px;
+        padding-bottom: 30px;
     }
 }
 

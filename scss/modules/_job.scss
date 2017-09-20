@@ -1,0 +1,22 @@
+.job {
+    background-color: $lightpink;
+    border-radius: 10px;
+    border: 1px solid $mediumpink;
+    padding: 15px 30px;
+    margin-top: 20px;
+
+    .job-left {
+        text-align: right;
+    }
+}
+
+.job-status {
+    height: 60px;
+    margin-top: -15px;
+}
+
+.expand-job {
+    font-size: 40px;
+    margin-left: 10px;
+    color: $black;
+}

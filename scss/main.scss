@@ -26,10 +26,15 @@
 @import 'modules/_profilesidebar.scss';
 @import 'modules/_profilebody.scss';
 
+/* dashboard */
+@import 'modules/_dashbar.scss';
+@import 'modules/_dashbody.scss';
+@import 'modules/_job.scss';
+
 /* login */
 @import 'modules/_login.scss';
 
-/* LAYOUTS - found on every page: header, footer, navbar... */
+/* LAYOUTS - : header, footer, navbar... */
 @import 'layouts/_navbar.scss';
 @import 'layouts/_header.scss';
 @import 'layouts/_footer.scss';
