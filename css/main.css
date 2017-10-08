@@ -158,7 +158,15 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 50px 0px;
 }
 
-/* line 6, /Users/s180024/Documents/HLO static/scss/modules/_homedesc.scss */
+@media (max-width: 768px) {
+  /* mobile for graphic and vid */
+  /* line 7, /Users/s180024/Documents/HLO static/scss/modules/_homedesc.scss */
+  .home-about-media {
+    width: 100%;
+  }
+}
+
+/* line 12, /Users/s180024/Documents/HLO static/scss/modules/_homedesc.scss */
 .home-about {
   text-align: center;
   padding: 60px 10px;
@@ -213,34 +221,45 @@ h1, h2, h3, h4, h5, h6, p {
 .pricing-table .free-plan, .pricing-table .partner-plan, .pricing-table .entrepreneur-plan {
   background-color: #FEFEFE;
   border: 1px solid #efefef;
-  padding: 3% 5%;
+  padding: 40px;
   /* padding of a plan */
 }
 
 /* line 40, /Users/s180024/Documents/HLO static/scss/modules/_pricings.scss */
 .pricing-table .entrepreneur-plan {
   /* shift entrepreneur plan up */
-  margin-top: -30px;
+  margin-top: -25px;
 }
 
-/* line 44, /Users/s180024/Documents/HLO static/scss/modules/_pricings.scss */
+@media (max-width: 768px) {
+  /* line 27, /Users/s180024/Documents/HLO static/scss/modules/_pricings.scss */
+  .pricing-table {
+    /* when the plans collaspe */
+  }
+  /* line 45, /Users/s180024/Documents/HLO static/scss/modules/_pricings.scss */
+  .pricing-table .free-plan, .pricing-table .partner-plan, .pricing-table .entrepreneur-plan {
+    margin: 30px 0px;
+  }
+}
+
+/* line 50, /Users/s180024/Documents/HLO static/scss/modules/_pricings.scss */
 .pricing-table .price-label {
   font-size: 60px;
   margin: 10px 10px 0px 10px;
 }
 
-/* line 49, /Users/s180024/Documents/HLO static/scss/modules/_pricings.scss */
+/* line 55, /Users/s180024/Documents/HLO static/scss/modules/_pricings.scss */
 .pricing-table .commissions {
   color: #B71C1C;
 }
 
-/* line 53, /Users/s180024/Documents/HLO static/scss/modules/_pricings.scss */
+/* line 59, /Users/s180024/Documents/HLO static/scss/modules/_pricings.scss */
 .pricing-table .plan-features {
   padding-top: 20px;
   padding-bottom: 30px;
 }
 
-/* line 59, /Users/s180024/Documents/HLO static/scss/modules/_pricings.scss */
+/* line 65, /Users/s180024/Documents/HLO static/scss/modules/_pricings.scss */
 .insurance {
   padding: 40px 120px 10px 120px;
   /* top right bottom left */

@@ -34,11 +34,17 @@
     .free-plan, .partner-plan, .entrepreneur-plan {
         background-color: $white;
         border: 1px solid $lightgrey;
-        padding: 3% 5%; /* padding of a plan */
+        padding: 40px; /* padding of a plan */
     }
 
     .entrepreneur-plan { /* shift entrepreneur plan up */
-        margin-top: -30px;
+        margin-top: -25px;
+    }
+
+    @media (max-width: 768px) { /* when the plans collaspe */
+        .free-plan, .partner-plan, .entrepreneur-plan {
+            margin: 30px 0px;
+        }
     }
 
     .price-label {
