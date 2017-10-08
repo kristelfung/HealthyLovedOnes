@@ -9,7 +9,7 @@
     background-color: $pink;
     border-color: $pink;
 }
-
+/* hover of primary CTA */
 .btn-primary:hover, .btn-primary:active, .btn-primary:focus, .btn-primary:active:hover {
       background-color: $primaryhover;
       border-color: $primaryhover;
@@ -20,7 +20,7 @@
     background-color: $lightgrey;
     border-color: $lightgrey;
 }
-
+/* hover of secondary CTA */
 .btn-default:hover, .btn-default:active, .btn-default:focus, .btn-default:active:hover {
     background-color: $defaulthover;
     border-color: $defaulthover;

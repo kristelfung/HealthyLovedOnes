@@ -5,21 +5,23 @@
     padding: 50px 0px;
 }
 
-.price-box {
+.price-box { /* contains HK$ 0/mo */
     display: inline-block;
     text-align: left;
     color: $darkred;
     position: relative;
 }
 
-.dollar {
-    position: absolute;
+.dollar { /* the HK$ */
+    position: absolute; /* makes it float */
     margin-top: 20px;
+    left: -15px;
 }
 
-.per-month {
-    color: $darkred;
-    margin-bottom: 20px;
+.per-month { /* /mo */
+    position: absolute; /* float */
+    margin-top: 51px;
+    right: -15px;
 }
 
 .pricing-table {
@@ -35,8 +37,8 @@
         padding: 3% 5%; /* padding of a plan */
     }
 
-    .entrepreneur-plan {
-        margin-top: -20px;
+    .entrepreneur-plan { /* shift entrepreneur plan up */
+        margin-top: -30px;
     }
 
     .price-label {

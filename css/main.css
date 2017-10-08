@@ -175,6 +175,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* line 8, /Users/s180024/Documents/HLO static/scss/modules/_pricings.scss */
 .price-box {
+  /* contains HK$ 0/mo */
   display: inline-block;
   text-align: left;
   color: #B71C1C;
@@ -183,17 +184,23 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* line 15, /Users/s180024/Documents/HLO static/scss/modules/_pricings.scss */
 .dollar {
+  /* the HK$ */
   position: absolute;
+  /* makes it float */
   margin-top: 20px;
+  left: -15px;
 }
 
-/* line 20, /Users/s180024/Documents/HLO static/scss/modules/_pricings.scss */
+/* line 21, /Users/s180024/Documents/HLO static/scss/modules/_pricings.scss */
 .per-month {
-  color: #B71C1C;
-  margin-bottom: 20px;
+  /* /mo */
+  position: absolute;
+  /* float */
+  margin-top: 51px;
+  right: -15px;
 }
 
-/* line 25, /Users/s180024/Documents/HLO static/scss/modules/_pricings.scss */
+/* line 27, /Users/s180024/Documents/HLO static/scss/modules/_pricings.scss */
 .pricing-table {
   margin: 0 auto;
   margin-top: 40px;
@@ -202,7 +209,7 @@ h1, h2, h3, h4, h5, h6, p {
   width: 80%;
 }
 
-/* line 32, /Users/s180024/Documents/HLO static/scss/modules/_pricings.scss */
+/* line 34, /Users/s180024/Documents/HLO static/scss/modules/_pricings.scss */
 .pricing-table .free-plan, .pricing-table .partner-plan, .pricing-table .entrepreneur-plan {
   background-color: #FEFEFE;
   border: 1px solid #efefef;
@@ -210,29 +217,30 @@ h1, h2, h3, h4, h5, h6, p {
   /* padding of a plan */
 }
 
-/* line 38, /Users/s180024/Documents/HLO static/scss/modules/_pricings.scss */
+/* line 40, /Users/s180024/Documents/HLO static/scss/modules/_pricings.scss */
 .pricing-table .entrepreneur-plan {
-  margin-top: -20px;
+  /* shift entrepreneur plan up */
+  margin-top: -30px;
 }
 
-/* line 42, /Users/s180024/Documents/HLO static/scss/modules/_pricings.scss */
+/* line 44, /Users/s180024/Documents/HLO static/scss/modules/_pricings.scss */
 .pricing-table .price-label {
   font-size: 60px;
   margin: 10px 10px 0px 10px;
 }
 
-/* line 47, /Users/s180024/Documents/HLO static/scss/modules/_pricings.scss */
+/* line 49, /Users/s180024/Documents/HLO static/scss/modules/_pricings.scss */
 .pricing-table .commissions {
   color: #B71C1C;
 }
 
-/* line 51, /Users/s180024/Documents/HLO static/scss/modules/_pricings.scss */
+/* line 53, /Users/s180024/Documents/HLO static/scss/modules/_pricings.scss */
 .pricing-table .plan-features {
   padding-top: 20px;
   padding-bottom: 30px;
 }
 
-/* line 57, /Users/s180024/Documents/HLO static/scss/modules/_pricings.scss */
+/* line 59, /Users/s180024/Documents/HLO static/scss/modules/_pricings.scss */
 .insurance {
   padding: 40px 120px 10px 120px;
   /* top right bottom left */
@@ -270,6 +278,7 @@ h1, h2, h3, h4, h5, h6, p {
   border-color: #F06292;
 }
 
+/* hover of primary CTA */
 /* line 13, /Users/s180024/Documents/HLO static/scss/modules/_buttons.scss */
 .btn-primary:hover, .btn-primary:active, .btn-primary:focus, .btn-primary:active:hover {
   background-color: rgba(240, 98, 146, 0.9);
@@ -283,10 +292,11 @@ h1, h2, h3, h4, h5, h6, p {
   border-color: #efefef;
 }
 
+/* hover of secondary CTA */
 /* line 24, /Users/s180024/Documents/HLO static/scss/modules/_buttons.scss */
 .btn-default:hover, .btn-default:active, .btn-default:focus, .btn-default:active:hover {
-  background-color: rgba(239, 239, 239, 0.9);
-  border-color: rgba(239, 239, 239, 0.9);
+  background-color: #E6E6E6;
+  border-color: #E6E6E6;
 }
 
 /* secondary CTA, clear version */
@@ -531,6 +541,7 @@ h1, h2, h3, h4, h5, h6, p {
 /* line 1, /Users/s180024/Documents/HLO static/scss/modules/_dashbody.scss */
 .dashbody {
   border-top: 1px solid #efefef;
+  /* border between dashboard tabs */
   padding-top: 20px;
   padding-bottom: 40px;
 }
@@ -538,6 +549,7 @@ h1, h2, h3, h4, h5, h6, p {
 /* line 7, /Users/s180024/Documents/HLO static/scss/modules/_dashbody.scss */
 .button-col {
   text-align: right;
+  /* new job button */
 }
 
 /* line 10, /Users/s180024/Documents/HLO static/scss/modules/_dashbody.scss */
@@ -781,6 +793,22 @@ h1, h2, h3, h4, h5, h6, p {
   background-color: #1B1B1B;
   color: #ffffff;
   padding: 20px 0px 10px 0px;
+}
+
+/* line 1, /Users/s180024/Documents/HLO static/scss/layouts/_forms.scss */
+label {
+  font-weight: normal;
+}
+
+/* line 5, /Users/s180024/Documents/HLO static/scss/layouts/_forms.scss */
+.form-title {
+  /* for the h3 heading for a form category */
+  padding-bottom: 10px;
+}
+
+/* line 9, /Users/s180024/Documents/HLO static/scss/layouts/_forms.scss */
+.form-column {
+  /* col-md-6 which holds a form group */
 }
 
 /*# sourceMappingURL=../css/main.map */
