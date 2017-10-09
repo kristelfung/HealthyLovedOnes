@@ -1,15 +1,16 @@
 .profile-body {
-    padding: 0px 60px 30px 60px; /* top right bototm left */
+    padding: 70px 60px 30px 60px; /* top right bototm left */
     border-right: 1px solid $mediumgrey;
+}
+
+@media (min-width: 768px) {
+    .profile-body {
+        margin-top: -70px;
+    }
 }
 
 .profile-section {
     padding: 10px 0px;
-}
-
-.label-success {
-    background-color: $darkgreen;
-    margin-left: 325px;
 }
 
 .table>tbody>tr>td {
