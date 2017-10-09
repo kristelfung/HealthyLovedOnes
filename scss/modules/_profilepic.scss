@@ -28,15 +28,17 @@
 
     .fa-plus { /* make icon centered */
         color: $mediumgrey;
-        margin-top: 22%;
-        margin-left: 28%;
+        position: absolute;
         font-size: 24px;
+        right: 10px;
+        top: 9px;
     }
 
     .fa-heart { /* make icon centered */
         color: $red;
-        margin-top: 28%;
-        margin-left: 25%;
-        font-size: 20px;
+        position: absolute;
+        font-size: 22px;
+        right: 9px;
+        top: 11px;
     }
 }

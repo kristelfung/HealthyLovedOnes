@@ -410,18 +410,20 @@ h1, h2, h3, h4, h5, h6, p {
 .favorite .fa-plus {
   /* make icon centered */
   color: #919191;
-  margin-top: 22%;
-  margin-left: 28%;
+  position: absolute;
   font-size: 24px;
+  right: 10px;
+  top: 9px;
 }
 
-/* line 36, /Users/s180024/Documents/HLO static/scss/modules/_profilepic.scss */
+/* line 37, /Users/s180024/Documents/HLO static/scss/modules/_profilepic.scss */
 .favorite .fa-heart {
   /* make icon centered */
   color: #E53935;
-  margin-top: 28%;
-  margin-left: 25%;
-  font-size: 20px;
+  position: absolute;
+  font-size: 22px;
+  right: 9px;
+  top: 11px;
 }
 
 /* line 1, /Users/s180024/Documents/HLO static/scss/modules/_profilehead.scss */
