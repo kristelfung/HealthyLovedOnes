@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>HealthyLovedOnes</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+
+  </head>
+
+  <body>
+
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="images/logo.png" class="logo"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Search <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Caregivers</a></li>
+                        <li><a href="#">Customers</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Forum</a></li>
+                <li><a href="#">Sign Up/Login</a></li>
+                <li><span class="navbar-divider">|</span></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-globe" aria-hidden="true"></i> English <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">English</a></li>
+                        <li><a href="#">中文</a></li>
+                    </ul>
+                </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row equal">
+            <div class="col-sm-3 search-filters">
+                <div class="form-group search-bar"><!-- search -->
+                    <span class="fa fa-search"></span>
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <div class="location-filter"><!-- location filter -->
+                  <h5 data-toggle="collapse" data-target="#location">Location <span class="caret"></span></h5>
+                  <div id="location" class="collapse in"><!-- specific filters -->
+                    <ul>
+                        <li id="filter">Causeway Bay</li>
+                        <li id="filter2">Wan Chai</li>
+                        <li>Mid Levels</li>
+                        <li id="filter1">Central</li>
+                        <li>Repulse Bay</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="technical-filter"><!-- tech skills filter -->
+                  <h5 data-toggle="collapse" data-target="#tech">Technical Skills <span class="caret"></span></h5>
+                  <div id="tech" class="collapse in"><!-- specific filters -->
+                    <ul>
+                        <li>Eldercare</li>
+                        <li>Addiction Counsellor</li>
+                        <li>Physiotherapist</li>
+                        <li>Chiropractor</li>
+                        <li>Masseur</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="languages-filter"><!-- language filter -->
+                  <h5 data-toggle="collapse" data-target="#language">Language <span class="caret"></span></h5>
+                  <div id="language" class="collapse in"><!-- specific filters -->
+                    <ul>
+                        <li>English</li>
+                        <li>Cantonese</li>
+                        <li>Manderin</li>
+                        <li>Taiwanese</li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+            <div class="col-sm-9 search-body">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="search-card">
+                            <a href="profile.html">
+                                <span class="link-spanner"></span>
+                            </a>
+                            <img src="images/search/dp.jpg" class="card-dp">
+                            <div class="card-desc">
+                                <h4>Jane Doe</h4>
+                                <p>
+                                    <i class="fa fa-star" aria-hidden="true" style="color: #FFC107;"></i>
+                                    <i class="fa fa-star" aria-hidden="true" style="color: #FFC107;"></i>
+                                    <i class="fa fa-star" aria-hidden="true" style="color: #FFC107;"></i>
+                                    <i class="fa fa-star" aria-hidden="true" style="color: #FFC107;"></i>
+                                    <i class="fa fa-star-half-o" aria-hidden="true" style="color: #FFC107;"></i>
+                                    (10)
+                                </p>
+                                <p>
+                                    <span class="label label-success">Wan Chai</span>
+                                    <span class="label label-success">Central</span>
+                                </p>
+                                <p class="card-about">I am a nursing student studying at HKU, living in Central. Looking for...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="search-card">
+                            <a href="profile.html">
+                                <span class="link-spanner"></span>
+                            </a>
+                            <img src="images/search/dp.jpg" class="card-dp">
+                            <div class="card-desc">
+                                <h4>Jane Doe</h4>
+                                <p>
+                                    <i class="fa fa-star" aria-hidden="true" style="color: #FFC107;"></i>
+                                    <i class="fa fa-star" aria-hidden="true" style="color: #FFC107;"></i>
+                                    <i class="fa fa-star" aria-hidden="true" style="color: #FFC107;"></i>
+                                    <i class="fa fa-star" aria-hidden="true" style="color: #FFC107;"></i>
+                                    <i class="fa fa-star-half-o" aria-hidden="true" style="color: #FFC107;"></i>
+                                    (10)
+                                </p>
+                                <p>
+                                    <span class="label label-success">Wan Chai</span>
+                                    <span class="label label-success">Central</span>
+                                </p>
+                                <p class="card-about">I am a nursing student studying at HKU, living in Central. Looking for...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="search-card">
+                            <a href="profile.html">
+                                <span class="link-spanner"></span>
+                            </a>
+                            <img src="images/search/dp.jpg" class="card-dp">
+                            <div class="card-desc">
+                                <h4>Jane Doe</h4>
+                                <p>
+                                    <i class="fa fa-star" aria-hidden="true" style="color: #FFC107;"></i>
+                                    <i class="fa fa-star" aria-hidden="true" style="color: #FFC107;"></i>
+                                    <i class="fa fa-star" aria-hidden="true" style="color: #FFC107;"></i>
+                                    <i class="fa fa-star" aria-hidden="true" style="color: #FFC107;"></i>
+                                    <i class="fa fa-star-half-o" aria-hidden="true" style="color: #FFC107;"></i>
+                                    (10)
+                                </p>
+                                <p>
+                                    <span class="label label-success">Wan Chai</span>
+                                    <span class="label label-success">Central</span>
+                                </p>
+                                <p class="card-about">I am a nursing student studying at HKU, living in Central. Looking for...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="search-card">
+                            <a href="profile.html">
+                                <span class="link-spanner"></span>
+                            </a>
+                            <img src="images/search/dp.jpg" class="card-dp">
+                            <div class="card-desc">
+                                <h4>Jane Doe</h4>
+                                <p>
+                                    <i class="fa fa-star" aria-hidden="true" style="color: #FFC107;"></i>
+                                    <i class="fa fa-star" aria-hidden="true" style="color: #FFC107;"></i>
+                                    <i class="fa fa-star" aria-hidden="true" style="color: #FFC107;"></i>
+                                    <i class="fa fa-star" aria-hidden="true" style="color: #FFC107;"></i>
+                                    <i class="fa fa-star-half-o" aria-hidden="true" style="color: #FFC107;"></i>
+                                    (10)
+                                </p>
+                                <p>
+                                    <span class="label label-success">Wan Chai</span>
+                                    <span class="label label-success">Central</span>
+                                </p>
+                                <p class="card-about">I am a nursing student studying at HKU, living in Central. Looking for...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="search-card">
+                            <a href="profile.html">
+                                <span class="link-spanner"></span>
+                            </a>
+                            <img src="images/search/dp.jpg" class="card-dp">
+                            <div class="card-desc">
+                                <h4>Jane Doe</h4>
+                                <p>
+                                    <i class="fa fa-star" aria-hidden="true" style="color: #FFC107;"></i>
+                                    <i class="fa fa-star" aria-hidden="true" style="color: #FFC107;"></i>
+                                    <i class="fa fa-star" aria-hidden="true" style="color: #FFC107;"></i>
+                                    <i class="fa fa-star" aria-hidden="true" style="color: #FFC107;"></i>
+                                    <i class="fa fa-star-half-o" aria-hidden="true" style="color: #FFC107;"></i>
+                                    (10)
+                                </p>
+                                <p>
+                                    <span class="label label-success">Wan Chai</span>
+                                    <span class="label label-success">Central</span>
+                                </p>
+                                <p class="card-about">I am a nursing student studying at HKU, living in Central. Looking for...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="search-card">
+                            <a href="profile.html">
+                                <span class="link-spanner"></span>
+                            </a>
+                            <img src="images/search/dp.jpg" class="card-dp">
+                            <div class="card-desc">
+                                <h4>Jane Doe</h4>
+                                <p>
+                                    <i class="fa fa-star" aria-hidden="true" style="color: #FFC107;"></i>
+                                    <i class="fa fa-star" aria-hidden="true" style="color: #FFC107;"></i>
+                                    <i class="fa fa-star" aria-hidden="true" style="color: #FFC107;"></i>
+                                    <i class="fa fa-star" aria-hidden="true" style="color: #FFC107;"></i>
+                                    <i class="fa fa-star-half-o" aria-hidden="true" style="color: #FFC107;"></i>
+                                    (10)
+                                </p>
+                                <p>
+                                    <span class="label label-success">Wan Chai</span>
+                                    <span class="label label-success">Central</span>
+                                </p>
+                                <p class="card-about">I am a nursing student studying at HKU, living in Central. Looking for...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid footer-top">
+        <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <h3>Quick Links</h3>
+                <ul class="list-unstyled">
+                    <li>How it works</li>
+                    <li>Terms of Use</li>
+                    <li>Privacy Policy</li>
+                    <li>Insurance Policy</li>
+                    <li>Community Guidelines</li>
+                </ul>
+            </div>
+            <div class="col-sm-3">
+                <h3>Company</h3>
+                <ul class="list-unstyled">
+                    <li>About Us/Dream Team</li>
+                    <li>Contact Us</li>
+                    <li>Q&amp;A with CEO</li>
+                    <li>Careers/Be a True Believer</li>
+                    <li>Press</li>
+                    <li>Blog</li>
+                    <li>Newsletter</li>
+                </ul>
+            </div>
+            <div class="col-sm-6 logo-container">
+                <img src="images/footer/twitter.png" class="footer-logo">
+                <img src="images/footer/facebook.png" class="footer-logo">
+                <img src="images/footer/googleplus.png" class="footer-logo">
+                <img src="images/footer/linkedin.png" class="footer-logo">
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="footer-bottom text-center">
+        <p>Copyright &copy; 2015 Healthy Loved Ones. All Rights Reserved.</p>
+    </div>
+
+    <!-- js files -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+    $(document).ready(function(){
+        $("#filter").click(function(){
+            $("#filter").toggleClass("filter-selected");
+        });
+    });
+    $(document).ready(function(){
+        $("#filter1").click(function(){
+            $("#filter1").toggleClass("filter-selected");
+        });
+    });
+    $(document).ready(function(){
+        $("#filter2").click(function(){
+            $("#filter2").toggleClass("filter-selected");
+        });
+    });
+    </script>
+
+  </body>
+</html>

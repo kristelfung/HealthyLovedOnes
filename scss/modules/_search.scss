@@ -1,0 +1,87 @@
+/* search filters */
+.search-filters { /* entire column, master div */
+    background-color: $red;
+    position: relative;
+    padding: 30px;
+
+    /* search box styling */
+    .fa-search {
+        position: absolute;
+        color: $grey;
+        top: 40px;
+        left: 40px;
+    }
+
+    input {
+        text-indent: 18px;
+    }
+}
+
+.location-filter, .technical-filter, .languages-filter { /* filter categories */
+    cursor: pointer;
+    color: $purewhite;
+    margin-top: 30px;
+
+    ul { /* list of specific filters */
+        list-style-type: none;
+        padding-left: 8px; /* indent */
+
+        li { /* spacing for a filter */
+            padding: 10px 15px;
+            margin: 5px;
+        }
+    }
+
+    .filter-selected { /* a filter */
+        background-color: $darkred;
+        border-radius: 5px;
+    }
+}
+
+/* search body CONTAINING ALL THE CARDS*/
+.search-body {
+    background-color: $lightpink;
+}
+
+.search-card { /* a search profile */
+    background-color: $white;
+    margin: 20px 5px 0px 5px; /* top right bottom left */
+    cursor: pointer;
+    position: relative; /* so the link spanner spans to the card */
+
+    .card-dp {
+        width: 100%;
+    }
+
+    .card-desc { /* div for container below image */
+        padding: 12px 20px;
+
+        .card-about {
+            margin-top: 15px;
+        }
+
+        h4, p { /* for the name and other desc. */
+            margin-bottom: 3px;
+        }
+
+        a {
+            color: $pureblack;
+        }
+    }
+}
+
+.link-spanner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+ @media (min-width: 768px) {
+   .row.equal { /* make both cols equally long */
+     display: flex;
+     flex-wrap: wrap;
+   }
+ }
