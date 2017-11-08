@@ -563,16 +563,39 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .inbox {
+  /* the entire table */
   width: 100%;
 }
 
 .inbox-message {
-  border-top: 1px solid #919191;
-  border-bottom: 1px solid #919191;
-  padding: 20px 0px;
+  /* the message row */
+  border-top: 1px solid #efefef;
+  border-bottom: 1px solid #efefef;
+}
+
+.inbox-message td {
+  padding: 10px;
+}
+
+.message-pic {
+  /* profile pic of message sender */
+  height: 70px;
+  border-radius: 50%;
 }
 
 .message-author {
+  font-size: 18px;
+  margin: 5px 0px;
+}
+
+.message-time {
+  color: #424242;
+  font-size: 12px;
+}
+
+.message-title {
+  margin: 5px 0px;
+  font-weight: bold;
   font-size: 18px;
 }
 

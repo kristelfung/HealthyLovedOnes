@@ -1,13 +1,33 @@
-.inbox {
+.inbox { /* the entire table */
     width: 100%;
 }
 
-.inbox-message {
-    border-top: 1px solid $mediumgrey;
-    border-bottom: 1px solid $mediumgrey;
-    padding: 20px 0px;
+.inbox-message { /* the message row */
+    border-top: 1px solid $lightgrey;
+    border-bottom: 1px solid $lightgrey;
+
+    td {
+        padding: 10px;
+    }
+}
+
+.message-pic { /* profile pic of message sender */
+    height: 70px;
+    border-radius: 50%;
 }
 
 .message-author {  
+    font-size: 18px;
+    margin: 5px 0px;
+}
+
+.message-time {
+    color: $grey;
+    font-size: 12px;
+}
+
+.message-title {
+    margin: 5px 0px;
+    font-weight: bold;
     font-size: 18px;
 }
