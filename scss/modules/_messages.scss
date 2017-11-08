@@ -2,13 +2,32 @@
     width: 100%;
 }
 
+/* customize inbox/archive tabs */
+.nav-tabs {
+    border: none;
+
+    li:active>a {
+        border: 1px solid transparent;
+    }
+}
+
 .inbox-message { /* the message row */
     border-top: 1px solid $lightgrey;
     border-bottom: 1px solid $lightgrey;
 
     td {
-        padding: 10px;
+        padding: 8px;
     }
+
+    @media (min-width: 768px){
+        td {
+            padding: 15px; /* padding for a message */
+        }
+    }
+}
+
+.tab-content { /* entire tab */
+    padding-top: 10px;
 }
 
 .message-pic { /* profile pic of message sender */
@@ -16,18 +35,31 @@
     border-radius: 50%;
 }
 
-.message-author {  
-    font-size: 18px;
-    margin: 5px 0px;
+.image-td { /* width of td for profile pic */
+    width: 70px;
 }
 
-.message-time {
+.message-time { /* timestamp */
     color: $grey;
     font-size: 12px;
 }
 
 .message-title {
-    margin: 5px 0px;
     font-weight: bold;
+}
+
+.message-author, .message-title { 
     font-size: 18px;
+}
+
+.message-author, .message-time, .message-title, .message-preview {
+    margin: 5px 0px;    
+}
+
+.fa-circle {
+    color: $green;
+}
+
+.read {
+    background-color: $whitegrey;
 }

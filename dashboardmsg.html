@@ -93,32 +93,62 @@
         <div class="container">
 
             <ul class="nav nav-tabs">
-                <li class="active"><a data-toggle="tab" href="#home">Inbox</a></li>
-                <li><a data-toggle="tab" href="#menu1">Archive</a></li>
+                <li class="active"><a data-toggle="tab" href="#inbox">Inbox</a></li>
+                <li><a data-toggle="tab" href="#archive">Archive</a></li>
             </ul>
 
             <div class="tab-content">
-                <div id="home" class="tab-pane fade in active">
+                <div id="inbox" class="tab-pane fade in active">
                     <table class="inbox">
                         <tr class="inbox-message">
-                            <td>
+                            <td class="image-td">
                                 <img src="images/msg.png" class="message-pic"/>
                             </td>
                             <td>
-                                <p class="message-author">John Smith</p>
+                                <p class="message-author">Jane Doe</p>
                                 <p class="message-time">3:23 PM</p>
                             </td>
-                            <td>
-                                <p class="message-title">Title of message</p>
-                                <p>hello...</p>
+                            <td class="message-contents">
+                                <p class="message-title">Cook pancakes</p>
+                                <p class="message-preview">Hi, I am looking for a caregiveer who can make a...</p>
                             </td>
                             <td>
-
+                                <i class="fa fa-circle" aria-hidden="true"></i> 
                             </td>
                         </tr>
+                        <tr class="inbox-message read">
+                            <td class="image-td">
+                                <img src="images/msg.png" class="message-pic"/>
+                            </td>
+                            <td>
+                                <p class="message-author">Jane Doe</p>
+                                <p class="message-time">Nov 4</p>
+                            </td>
+                            <td>
+                                <p class="message-title">Need groceries</p>
+                                <p class="message-preview">Hi, could you get some groceries from Wellcome down...</p>
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                        <tr class="inbox-message read">
+                                <td class="image-td">
+                                    <img src="images/msg.png" class="message-pic"/>
+                                </td>
+                                <td>
+                                    <p class="message-author">Jane Doe</p>
+                                    <p class="message-time">Nov 4</p>
+                                </td>
+                                <td>
+                                    <p class="message-title">Need groceries</p>
+                                    <p class="message-preview">Hi, could you get some groceries from Wellcome down...</p>
+                                </td>
+                                <td>
+                                </td>
+                            </tr>
                     </table>
                 </div>
-                <div id="menu1" class="tab-pane fade">
+                <div id="archive" class="tab-pane fade">
                   <h3>Menu 1</h3>
                   <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
