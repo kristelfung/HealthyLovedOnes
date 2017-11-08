@@ -1,0 +1,12 @@
+/* get rid of grey borders */
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+.submit-buttons {
+    text-align: right;
+}

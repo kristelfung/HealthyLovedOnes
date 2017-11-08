@@ -568,31 +568,6 @@ h1, h2, h3, h4, h5, h6, p {
   margin-top: 20px;
 }
 
-.nav-tabs {
-  /* border along bottom */
-  border: none;
-}
-
-/* rid the background color hover */
-.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
-  border: 1px solid transparent;
-  border-bottom: 3px solid #388E3C;
-}
-
-.nav-tabs > li > a:hover {
-  border: 1px solid transparent;
-  background: none;
-}
-
-.compose-col {
-  text-align: right;
-}
-
-/* custom tab styles */
-.active {
-  font-weight: bold;
-}
-
 /* inbox */
 .inbox-message {
   /* the message row */
@@ -651,6 +626,19 @@ h1, h2, h3, h4, h5, h6, p {
 
 .read {
   background-color: #f9f9f9;
+}
+
+/* get rid of grey borders */
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-footer {
+  border-top: none;
+}
+
+.submit-buttons {
+  text-align: right;
 }
 
 /* search */
