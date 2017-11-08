@@ -1,4 +1,21 @@
+.all-messages {
+    margin: 20px 0px;
+}
+
 .message-body {
-    border-top: $lightgrey;
-    border-bottom: $lightgrey;
+    border-top: 1px solid $lightgrey;
+    border-bottom: 1px solid $lightgrey;
+    padding: 20px 0px;
+
+    img { /* profile pic of sender */
+        border-radius: 50%;
+        float: left;
+        width: 70px;
+        margin-right: 20px;
+        clear: both;
+    }
+
+    p {
+        margin-top: 30px;
+    }
 }
