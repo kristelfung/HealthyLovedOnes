@@ -11,6 +11,11 @@
     }
 }
 
+.compose-col {
+    text-align: right;
+}
+
+/* inbox */
 .inbox-message { /* the message row */
     border-top: 1px solid $lightgrey;
     border-bottom: 1px solid $lightgrey;

@@ -576,6 +576,11 @@ h1, h2, h3, h4, h5, h6, p {
   border: 1px solid transparent;
 }
 
+.compose-col {
+  text-align: right;
+}
+
+/* inbox */
 .inbox-message {
   /* the message row */
   border-top: 1px solid #efefef;
