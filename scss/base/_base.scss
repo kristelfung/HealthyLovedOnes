@@ -34,13 +34,21 @@ hr {
     opacity: 0.4;
 }
 
-/* TODO: ADD LI???? */
 h1, h2, h3, h4, h5, h6, p {
     opacity: 0.87;
 }
 
 .text-center {
     text-align: center;
+}
+
+/* table custom styles */
+.table {
+    border-bottom: 1px solid #ddd;
+}
+
+.table-hover>tbody>tr:hover {
+    background-color: $whitegrey;
 }
 
 .container-small {

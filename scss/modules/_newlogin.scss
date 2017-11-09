@@ -1,0 +1,9 @@
+.login-column {
+    display: table;
+    width: 100%;
+
+    .login {
+        display: table-cell; 
+        vertical-align: middle;
+    }
+}

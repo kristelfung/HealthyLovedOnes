@@ -2,15 +2,37 @@
     background-color: $lightpink;
     border-radius: 10px;
     border: 1px solid $mediumpink;
-    padding: 15px 30px;
     margin-top: 20px;
 
-    .job-left {
-        text-align: right;
+    .job-right { /* status, expand button */
+        float: right;
+        margin: 20px 40px;        
+    }
+
+    .job-name {
+        display: inline-block;
+        margin: 20px 40px;        
+    }
+
+    .job-desc { /* expanded content of job */
+        background-color: $white;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        padding: 20px 40px;
+    }
+
+    @media (max-width: 767px) {
+        .job-right, .job-name { /* for mobile */
+            margin: 10px 20px;
+        }
+
+        .job-desc {
+            padding: 10px 20px;
+        }
     }
 }
 
-.job-status {
+.job-status { /* img */
     height: 60px;
     margin-top: -15px;
 }
@@ -19,4 +41,39 @@
     font-size: 40px;
     margin-left: 10px;
     color: $black;
+    cursor: pointer;
+}
+
+/* table of caregiver applicants */
+.applicants {
+    cursor: pointer;
+
+    .applicant-name {
+        font-size: 18px;
+        margin-top: 5px;
+        margin-bottom: 0px;
+    }
+
+    .applicant-date {
+        margin: 0px;
+    }
+
+    .applicant-buttons { /* hire, message container */
+        text-align: right;
+    }
+
+    .applicant-link, .applicant-link:hover { /* the <a> wrapper */
+        display: block;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    td .btn { /* a hire/message button */
+        margin-top: 8px;
+    }
+
+    tbody>tr>td {
+        padding: 15px 30px;
+
+    }
 }
