@@ -10,7 +10,6 @@
 /* blacks and whites */
 /* body texts*/
 /* hovered buttons */
-/* breakpoints */
 @font-face {
   font-family: "NotoSans";
   src: url("../fonts/NotoSans/NotoSans-Regular.eot?") format("eot"), url("../fonts/NotoSans/NotoSans-Regular.ttf") format("truetype"), url("../fonts/NotoSans/NotoSans-Regular.svg#NotoSans") format("svg");
@@ -67,6 +66,7 @@ h1, h2, h3, h4, h5, h6, p {
   background-color: #f9f9f9;
 }
 
+/* small container */
 .container-small {
   padding-right: 15px;
   padding-left: 15px;
@@ -90,6 +90,15 @@ h1, h2, h3, h4, h5, h6, p {
   .container-small {
     width: 700px;
   }
+}
+
+/* form styles */
+.form-group {
+  margin-bottom: 20px;
+}
+
+textarea {
+  resize: none;
 }
 
 /* MODULES - jumbotron, buttons, pricings... */
@@ -763,6 +772,60 @@ h1, h2, h3, h4, h5, h6, p {
 
 .message-body p {
   margin-top: 30px;
+}
+
+.postjob-steps {
+  /* pill color change */
+}
+
+.postjob-steps li.active a, .postjob-steps li.active a:hover, .postjob-steps li.active a:focus {
+  background-color: #388E3C;
+}
+
+.postjob-steps li a {
+  color: #000000;
+}
+
+@media (min-width: 768px) {
+  .postjob-steps {
+    margin: 20px 0px;
+  }
+}
+
+/* form styles */
+.next {
+  float: right;
+}
+
+.back {
+  float: left;
+}
+
+.add-time i {
+  margin-top: 8px;
+}
+
+/* UPLOAD BUTTON  */
+.inputfile {
+  /* hide upload button */
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.inputfile + label {
+  font-size: 16px;
+  display: inline-block;
+  cursor: pointer;
+  /* "hand" cursor */
+}
+
+.inputfile + label * {
+  /* touch screen */
+  pointer-events: none;
 }
 
 /* search */

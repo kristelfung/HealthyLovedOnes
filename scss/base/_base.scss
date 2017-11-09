@@ -51,6 +51,7 @@ h1, h2, h3, h4, h5, h6, p {
     background-color: $whitegrey;
 }
 
+/* small container */
 .container-small {
     padding-right: 15px;
     padding-left: 15px;
@@ -73,4 +74,13 @@ h1, h2, h3, h4, h5, h6, p {
     .container-small {
         width: 700px;
     }
+}
+
+/* form styles */
+.form-group {
+    margin-bottom: 20px;
+}
+
+textarea {
+    resize: none;
 }

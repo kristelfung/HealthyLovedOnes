@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>HealthyLovedOnes</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <!-- font awesome -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="images/logo.png" class="logo"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Search <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Caregivers</a></li>
+                        <li><a href="#">Customers</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Forum</a></li>
+                <li><a href="#">Sign Up/Login</a></li>
+                <li><span class="navbar-divider">|</span></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-globe" aria-hidden="true"></i> English <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">English</a></li>
+                        <li><a href="#">中文</a></li>
+                    </ul>
+                </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6">
+                    <h1>Dashboard</h1>
+                    <h5>Manage caregivers, job postings, and messages.</h5>
+                </div>
+                <div class="col-xs-6 header-image-col">
+                    <img src="images/infopage/pluses.png" class="header-image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-small dashbar"><!-- dashboard tabs -->
+        <div class="row text-center">
+            <div class="col-xs-3 active">
+                <img src="images/dashboard/suitcase.png" class="dashboard-logo">
+                <p>Jobs</p>
+            </div>
+            <div class="col-xs-3">
+                <img src="images/dashboard/messages.png" class="dashboard-logo">
+                <p>Messages</p>
+            </div>
+            <div class="col-xs-3">
+                <img src="images/dashboard/profile.png" class="dashboard-logo">
+                <p>Profile</p>
+            </div>
+            <div class="col-xs-3">
+                <img src="images/dashboard/settings.png" class="dashboard-logo">
+                <p>Settings</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="dashbody">
+        <div class="container-small">
+            <h3>Post a Job</h3>
+
+            <ul class="nav nav-pills nav-justified postjob-steps">
+                <li class="active"><a data-toggle="pill" href="#details">Details</a></li>
+                <li><a data-toggle="pill" href="#requirements">Requirements</a></li>
+                <li><a data-toggle="pill" href="#photos">Photos</a></li>
+                <li><a data-toggle="pill" href="#review">Review</a></li>
+            </ul>
+                  
+            <div class="tab-content">
+                <form>
+                    <div id="details" class="tab-pane fade in active">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="location">Name</label>
+                                    <input type="text" class="form-control" id="location" placeholder="This is also the title of your job!">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="gender">Gender</label>
+                                    <select class="form-control" id="gender">
+                                        <option>Male</option>
+                                        <option>Female</option>
+                                    </select>
+                                </div>
+                            
+                                <div class="form-group">
+                                    <label for="bday">Date of Birth</label>
+                                    <input type="date" class="form-control" id="bday" placeholder="DD/MM/YYY">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="hkidpp">HKID/Passport</label>
+                                    <input type="text" class="form-control" id="hkidpp">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="text" class="form-control" id="phone">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" id="email">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="address">Address</label>
+                                    <textarea class="form-control" rows="4" id="address" placeholder="14A Evergreen Villa..."></textarea>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="district">District</label>
+                                    <select class="form-control" id="district">
+                                        <option>Central</option>
+                                        <option>Sai Wan Ho</option>
+                                        <option>Aberdeen</option>
+                                        <option>Wan Chai</option>
+                                        <option>Kwun Tong</option>
+                                        <option>Sham Shui Po</option>
+                                        <option>San Ko Pong</option>
+                                        <option>Mongkok</option>
+                                        <option>Sha Tin</option>
+                                        <option>Tsuen Wan</option>
+                                        <option>Yuen Long</option>
+                                        <option>Kowloon</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="country">Country</label>
+                                    <select class="form-control" id="country">
+                                        <option>Hong Kong</option>
+                                        <option>China</option>
+                                        <option>Singapore</option>
+                                        <option>Singapore</option>
+                                        <option>Malaysia</option>
+                                        <option>India</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="languages">Languages</label>
+                                    <input type="text" class="form-control" id="languages" placeholder="English, Chinese...">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="address">Hobbies</label>
+                                    <textarea class="form-control" rows="2" id="hobbies" placeholder="Biking, running..."></textarea>
+                                 </div>
+
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-primary next">Next</a>
+                    </div>
+                    <div id="requirements" class="tab-pane fade">
+                        <div class="form-group">
+                            <label for="address">Job Description</label>
+                            <textarea class="form-control" rows="4" id="address" placeholder="My mother is in need of..."></textarea>
+                        </div>
+
+                        <!-- DYNAMIC FORM FIELD, WILL NEED REACT -->
+                        <div class="form-group">
+                            <div class="row">
+                                <label class="col-xs-5 control-label">Day of Week</label>
+                                <label class="col-xs-3 control-label">Time Start</label>
+                                <label class="col-xs-3 control-label">Time End</label>
+                                <label class="col-xs-1 control-label"></label>
+                                <div class="col-xs-5">
+                                    <input type="text" class="form-control" />
+                                </div>
+                                <div class="col-xs-3">
+                                    <input type="time" class="form-control" />
+                                </div>
+                                <div class="col-xs-3">
+                                    <input type="time" class="form-control" />
+                                </div>
+                                <div class="col-xs-1">
+                                    <span class="add-time"><i class="fa fa-plus"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <a href="#" class="btn btn-default back">Back</a>
+                        <a href="#" class="btn btn-primary next">Next</a>
+                    </div>
+                    <div id="photos" class="tab-pane fade">
+                        <h4>Profile Picture</h4>
+                        <div class="form-group">
+                            <input type="file" name="file" id="file" class="inputfile" />
+                            <label for="file" class="btn btn-default">Upload Profile Picture</label>
+                        </div>
+                        <br/>
+                        <h4>Cover Photo</h4>
+                        <div class="form-group">
+                            <input type="file" name="file" id="file" class="inputfile" />
+                            <label for="file" class="btn btn-default">Upload Cover Photo</label>
+                        </div>
+                        <a href="#" class="btn btn-default back">Back</a>
+                        <a href="#" class="btn btn-primary next">Next</a>
+                    </div>
+                    <div id="review" class="tab-pane fade">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <h5>Name</h5>
+                                <p>Input here</p>
+                                <br/>
+                                <h5>Gender</h5>
+                                <p>Input here</p>
+                                <br/>
+                                <h5>Date of Birth</h5>
+                                <p>Input here</p>
+                                <br />
+                                <h5>Languages</h5>
+                                <p>Input here</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <h5>Address</h5>
+                                <p>Input here</p>
+                                <br />
+                                <h5>District</h5>
+                                <p>Input here</p>
+                                <br />
+                                <h5>Country</h5>
+                                <p>Input here</p>
+                            </div>
+                        </div>
+                        <br/>
+                        <h5>Job Description</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel velit viverra lectus dapibus lacinia. Quisque dui magna, ultricies volutpat ultrices eget, tempor non eros. Mauris fringilla vehicula lectus non tempus. Ut in faucibus elit, eget egestas ligula. Aliquam nulla turpis, luctus sit amet leo nec, porta imperdiet neque. </p>
+                        <br/>
+                        <h5>Work Times</h5>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Day of Week</th>
+                                    <th>Time</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Sunday</td>
+                                    <td>10:00 AM - 3:00 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Monday</td>
+                                     <td>10:00 AM - 3:00 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Wednesday</td>
+                                    <td>10:00 AM - 3:00 PM</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a href="#" class="btn btn-default back">Back</a>
+                        <a href="#" class="btn btn-primary next">Submit</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid footer-top">
+        <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <h3>Quick Links</h3>
+                <ul class="list-unstyled">
+                    <li>How it works</li>
+                    <li>Terms of Use</li>
+                    <li>Privacy Policy</li>
+                    <li>Insurance Policy</li>
+                    <li>Community Guidelines</li>
+                </ul>
+            </div>
+            <div class="col-sm-3">
+                <h3>Company</h3>
+                <ul class="list-unstyled">
+                    <li>About Us/Dream Team</li>
+                    <li>Contact Us</li>
+                    <li>Q&amp;A with CEO</li>
+                    <li>Careers/Be a True Believer</li>
+                    <li>Press</li>
+                    <li>Blog</li>
+                    <li>Newsletter</li>
+                </ul>
+            </div>
+            <div class="col-sm-6 logo-container">
+                <img src="images/footer/twitter.png" class="footer-logo">
+                <img src="images/footer/facebook.png" class="footer-logo">
+                <img src="images/footer/googleplus.png" class="footer-logo">
+                <img src="images/footer/linkedin.png" class="footer-logo">
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="footer-bottom text-center">
+        <p>Copyright &copy; 2015 Healthy Loved Ones. All Rights Reserved.</p>
+    </div>
+
+    <!-- js files -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
