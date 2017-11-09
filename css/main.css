@@ -632,6 +632,12 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 15px 30px;
 }
 
+@media (max-width: 767px) {
+  .applicants tbody > tr > td {
+    padding: 5px;
+  }
+}
+
 .inbox {
   /* the entire table */
   width: 100%;
