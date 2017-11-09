@@ -84,7 +84,25 @@
 }
 
 /* hired caregiver */
-.hired-profile {
-    border-radius: 50%;
-    max-width: 200px;
+.hired-caregiver {
+    margin-bottom: 30px;
+    text-align: center;
+
+    .hired-picture {
+        border-radius: 50%;
+        max-width: 200px;
+        padding: 10px 0px;
+    }
+
+    @media (min-width: 768px) {
+        .col-sm-9 { /* column with message, review */
+            margin-top: 100px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .hired-caregiver {
+        text-align: center;
+    }
 }

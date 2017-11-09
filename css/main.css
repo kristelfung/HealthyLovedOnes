@@ -639,9 +639,28 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /* hired caregiver */
-.hired-profile {
+.hired-caregiver {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.hired-caregiver .hired-picture {
   border-radius: 50%;
   max-width: 200px;
+  padding: 10px 0px;
+}
+
+@media (min-width: 768px) {
+  .hired-caregiver .col-sm-9 {
+    /* column with message, review */
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 767px) {
+  .hired-caregiver {
+    text-align: center;
+  }
 }
 
 .inbox {
