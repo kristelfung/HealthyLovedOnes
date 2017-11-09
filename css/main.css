@@ -638,6 +638,12 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 
+/* hired caregiver */
+.hired-profile {
+  border-radius: 50%;
+  max-width: 200px;
+}
+
 .inbox {
   /* the entire table */
   width: 100%;
