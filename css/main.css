@@ -815,6 +815,10 @@ textarea {
   margin-top: 8px;
 }
 
+.other {
+  max-width: 250px;
+}
+
 /* UPLOAD BUTTON  */
 .inputfile {
   /* hide upload button */
