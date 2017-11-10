@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>HealthyLovedOnes</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <!-- font awesome -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="images/logo.png" class="logo"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Search <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Caregivers</a></li>
+                        <li><a href="#">Customers</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Forum</a></li>
+                <li><a href="#">Sign Up/Login</a></li>
+                <li><span class="navbar-divider">|</span></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-globe" aria-hidden="true"></i> English <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">English</a></li>
+                        <li><a href="#">中文</a></li>
+                    </ul>
+                </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6">
+                    <h1>Dashboard</h1>
+                    <h5>Manage caregivers, job postings, and messages.</h5>
+                </div>
+                <div class="col-xs-6 header-image-col">
+                    <img src="images/infopage/pluses.png" class="header-image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-small dashbar"><!-- dashboard tabs -->
+        <div class="row text-center">
+            <div class="col-xs-3">
+                <img src="images/dashboard/suitcase.png" class="dashboard-logo">
+                <p>Jobs</p>
+            </div>
+            <div class="col-xs-3">
+                <img src="images/dashboard/messages.png" class="dashboard-logo">
+                <p>Messages</p>
+            </div>
+            <div class="col-xs-3 active">
+                <img src="images/dashboard/profile.png" class="dashboard-logo">
+                <p>Profile</p>
+            </div>
+            <div class="col-xs-3">
+                <img src="images/dashboard/settings.png" class="dashboard-logo">
+                <p>Settings</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="dashbody">
+        <div class="container-small">
+            <h3>Become a Caregiver</h3>
+
+            <ul class="nav nav-pills nav-justified postjob-steps">
+                <li class="active"><a data-toggle="pill" href="#details">Details</a></li>
+                <li><a data-toggle="pill" href="#experience">Experience</a></li>
+                <li><a data-toggle="pill" href="#services">Services</a></li>
+                <li><a data-toggle="pill" href="#photos">Photos</a></li>
+                <li><a data-toggle="pill" href="#pricing">Pricing</a></li>
+                <li><a data-toggle="pill" href="#review">Review</a></li>
+            </ul>
+
+            <div class="tab-content">
+                <form>
+                    
+                <div id="details" class="tab-pane fade in active">
+                    <div class="row">
+                    <div class="col-md-6 form-column">
+                        <div class="form-group">
+                          <label for="firstname">First name</label>
+                          <input type="text" class="form-control" id="firstname">
+                        </div>
+                        <div class="form-group">
+                          <label for="lastname">Last name</label>
+                          <input type="text" class="form-control" id="lastname">
+                        </div>
+                        <div class="form-group">
+                            <label for="gender">Gender</label>
+                            <select class="form-control" id="gender">
+                                <option>Male</option>
+                                <option>Female</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="bday">Date of Birth</label>
+                            <input type="date" class="form-control" id="bday" placeholder="DD/MM/YYY">
+                        </div>
+                        <div class="form-group">
+                          <label for="hrrate">Hourly rate</label>
+                          <input type="text" class="form-control" id="hrrate" placeholder="80">
+                        </div>
+                        <div class="form-group">
+                            <label for="extra">Extra charges</label>
+                            <input type="text" class="form-control" id="extra" placeholder="0">
+                        </div>
+                    </div>
+                    <div class="col-md-6 form-column">
+                        <div class="form-group">
+                            <label for="address">Address</label>
+                            <textarea class="form-control" rows="3" id="address"></textarea>
+                        </div>
+                        <div class="form-group">
+                          <label for="district">District</label>
+                          <input type="number" class="form-control" id="district" placeholder="In years, e.g. 1, 2, 3...">
+                        </div>
+                        <div class="form-group">
+                          <label for="country">Country</label>
+                          <input type="number" class="form-control" id="country" placeholder="English, Cantonese...">
+                        </div>
+                        <div class="form-group">
+                          <label for="religion">Religion</label>
+                          <input type="text" class="form-control" id="religion">
+                        </div>
+                        <div class="form-group">
+                          <label for="languages">Languages</label>
+                          <input type="text" class="form-control" id="languages">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="hobbies">Hobbies</label>
+                    <textarea class="form-control" rows="3" id="hobbies" placeholder="Biking, painting..."></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="about">About</label>
+                  <textarea class="form-control" rows="5" id="about" placeholder="I am a 30 year old nursing student..."></textarea>
+                </div>
+                <div class="submit-buttons">
+                    <a href="#" class="btn btn-primary">Next</a>
+                </div>
+                </div>
+
+                <div id="experience" class="tab-pane fade">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="yearexp">Years of experience</label>
+                                <input type="number" class="form-control" id="yearexp">
+                            </div>
+                            <div class="form-group">
+                                <label for="workexp">Work experience</label>
+                                <input type="text" class="form-control" id="workexp">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="license">Licenses and Credentials</label>
+                                <input type="text" class="form-control" id="license">
+                            </div>
+                            <div class="form-group">
+                                <label for="edu">Education History</label>
+                                <input type="text" class="form-control" id="edu">
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-default back">Back</a>
+                    <a href="#" class="btn btn-primary next">Next</a>
+                </div>
+
+                <div id="services" class="tab-pane fade">
+                    <div class="form-group">
+                        <label>Type of care</label>
+                        <br/>
+                        <label class="radio-inline"><input type="radio" name="optradio">Live-in</label>
+                        <label class="radio-inline"><input type="radio" name="optradio">Live-out</label>
+                    </div>
+                    <h4>Type of Caregiver</h4>
+                    <div class="row checkbox-collection">
+                        <div class="col-sm-6">
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Volunteer Caregivers</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Nursing Students</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Home Nurse</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Eldercare</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Weekend Caregivers</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Special Needs</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Specialist Caregivers</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Expert Caregivers</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">TLC Caregivers</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Licensed Nurse</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4>Professional Services</h4>
+                    <div class="row checkbox-collection">
+                        <div class="col-sm-6">
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Addiction Counselor</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Beautician</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Chinese Medicine Expert</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Chiropractor</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Eldercare</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Hair Stylist</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Licensed Nurse</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Occupational Therapist</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Massage Therapist</label>
+                            </div>
+                            <div class="form-group">
+                                <label for="other">Other</label>
+                                <input type="text" class="form-control" id="other">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Personal Trainer</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Yoga Instructor</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Physiotherapist</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Midwife</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Reflexologist</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Special Needs Therapist</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Speech Therapist</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Spiritual/Body/Mind Expert</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Sports Therapist</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4>Personal Services</h4>
+                    <div class="row checkbox-collection">
+                        <div class="col-sm-6">
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Bathing</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Companionship</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Exercise</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Groceries and Shopping</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Grooming</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Housekeeping</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Managing Medications</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Meal Prep</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Transferring and Mobility</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Toileting</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Transportation</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Travel Companion</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="address">Special Medical Conditions</label>
+                        <textarea class="form-control" rows="4" id="address" placeholder="ALS, diabetes, stroke..."></textarea>
+                    </div>
+
+                    <!-- DYNAMIC FORM FIELD, WILL NEED REACT -->
+                    <div class="form-group">
+                        <div class="row">
+                            <label class="col-xs-5 control-label">Day of Week</label>
+                            <label class="col-xs-3 control-label">Time Start</label>
+                            <label class="col-xs-3 control-label">Time End</label>
+                            <label class="col-xs-1 control-label"></label>
+                            <div class="col-xs-5">
+                                <select class="form-control" id="length">
+                                    <option>Monday</option>
+                                    <option>Tuesday</option>
+                                    <option>Wednesday</option>
+                                    <option>Thursday</option>
+                                    <option>Friday</option>
+                                    <option>Saturday</option>
+                                    <option>Sunday</option>
+                                </select>
+                            </div>
+                            <div class="col-xs-3">
+                                <input type="time" class="form-control" />
+                            </div>
+                            <div class="col-xs-3">
+                                <input type="time" class="form-control" />
+                            </div>
+                            <div class="col-xs-1">
+                                <span class="add-time"><i class="fa fa-plus"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <br/>
+                    <h4>Work Locations</h4>
+                    <div class="row checkbox-collection">
+                        <div class="col-sm-6">
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Central</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Sai Wan Ho</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Aberdeen</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Wan Chai</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Kwun Tong</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Sham Shui Po</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Wong Tai Sin</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Mongkok</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Cheung Chau</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Shan Tin</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Tseun Wan</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Yuen Long</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Kowloon City</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">North/Fanling</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div id="photos" class="tab-pane fade">
+                    <h4>Profile Picture</h4>
+                    <div class="form-group">
+                        <input type="file" name="file" id="file" class="inputfile" />
+                        <label for="file" class="btn btn-default">Upload Profile Picture</label>
+                    </div>
+                    <br/>
+                    <h4>Cover Photo</h4>
+                    <div class="form-group">
+                        <input type="file" name="file" id="file" class="inputfile" />
+                        <label for="file" class="btn btn-default">Upload Cover Photo</label>
+                    </div>
+                    <a href="#" class="btn btn-default back">Back</a>
+                    <a href="#" class="btn btn-primary next">Next</a>
+                </div>
+
+                <div id="pricing" class="tab-pane fade">
+                    <div class="radio">
+                        <label><input type="radio" name="optradio">Free Plan - 0$/mo</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio">Entrepreneur Plan - 88$/mo</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio">Partner Plan - 888$/mo</label>
+                    </div>
+                    <a href="#" class="btn btn-default back">Back</a>
+                    <a href="#" class="btn btn-primary next">Next</a>
+                </div>
+                
+                <div id="review" class="tab-pane fade">
+                    <div class="row">
+                            <div class="col-sm-6">
+                                <h5>Name</h5>
+                                <p>Input here</p>
+                                <br/>
+                                <h5>Gender</h5>
+                                <p>Input here</p>
+                                <br/>
+                                <h5>Date of Birth</h5>
+                                <p>Input here</p>
+                                <br />
+                                <h5>Languages</h5>
+                                <p>Input here</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <h5>Address</h5>
+                                <p>Input here</p>
+                                <br />
+                                <h5>District</h5>
+                                <p>Input here</p>
+                                <br />
+                                <h5>Country</h5>
+                                <p>Input here</p>
+                            </div>
+                        </div>
+                        <br/>
+                        <h5>About</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel velit viverra lectus dapibus lacinia. Quisque dui magna, ultricies volutpat ultrices eget, tempor non eros. Mauris fringilla vehicula lectus non tempus. Ut in faucibus elit, eget egestas ligula. Aliquam nulla turpis, luctus sit amet leo nec, porta imperdiet neque. </p>
+                        <br/>
+                        <h5>Special Medical Conditions</h5>
+                        <p>Input here</p>
+                        <br/>
+                        <h5>Work Times</h5>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Day of Week</th>
+                                    <th>Time</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Sunday</td>
+                                    <td>10:00 AM - 3:00 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Monday</td>
+                                     <td>10:00 AM - 3:00 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Wednesday</td>
+                                    <td>10:00 AM - 3:00 PM</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    <a href="#" class="btn btn-default back">Back</a>
+                    <a href="#" class="btn btn-primary next">Submit</a>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid footer-top">
+        <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <h3>Quick Links</h3>
+                <ul class="list-unstyled">
+                    <li>How it works</li>
+                    <li>Terms of Use</li>
+                    <li>Privacy Policy</li>
+                    <li>Insurance Policy</li>
+                    <li>Community Guidelines</li>
+                </ul>
+            </div>
+            <div class="col-sm-3">
+                <h3>Company</h3>
+                <ul class="list-unstyled">
+                    <li>About Us/Dream Team</li>
+                    <li>Contact Us</li>
+                    <li>Q&amp;A with CEO</li>
+                    <li>Careers/Be a True Believer</li>
+                    <li>Press</li>
+                    <li>Blog</li>
+                    <li>Newsletter</li>
+                </ul>
+            </div>
+            <div class="col-sm-6 logo-container">
+                <img src="images/footer/twitter.png" class="footer-logo">
+                <img src="images/footer/facebook.png" class="footer-logo">
+                <img src="images/footer/googleplus.png" class="footer-logo">
+                <img src="images/footer/linkedin.png" class="footer-logo">
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="footer-bottom text-center">
+        <p>Copyright &copy; 2015 Healthy Loved Ones. All Rights Reserved.</p>
+    </div>
+
+    <!-- js files -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
