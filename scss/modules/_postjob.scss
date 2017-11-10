@@ -29,10 +29,6 @@
     }
 }
 
-.other {
-    max-width: 250px;
-}
-
 /* UPLOAD BUTTON  */
 .inputfile { /* hide upload button */
 	width: 0.1px;
@@ -51,4 +47,8 @@
 
 .inputfile + label * { /* touch screen */
 	pointer-events: none;
+}
+
+.checkbox-collection {
+    margin-bottom: 20px;
 }

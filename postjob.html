@@ -199,7 +199,7 @@
                     </div>
                     <div id="requirements" class="tab-pane fade">
                         <h4>Type of Caregiver</h4>
-                        <div class="row">
+                        <div class="row checkbox-collection">
                             <div class="col-sm-6">
                                 <div class="checkbox">
                                     <label><input type="checkbox" value="">Volunteer Caregivers</label>
@@ -237,7 +237,7 @@
                         </div>
 
                         <h4>Professional Services</h4>
-                        <div class="row">
+                        <div class="row checkbox-collection">
                             <div class="col-sm-6">
                                 <div class="checkbox">
                                     <label><input type="checkbox" value="">Addiction Counselor</label>
@@ -265,6 +265,10 @@
                                 </div>
                                 <div class="checkbox">
                                     <label><input type="checkbox" value="">Massage Therapist</label>
+                                </div>
+                                <div class="form-group">
+                                    <label for="other">Other</label>
+                                    <input type="text" class="form-control" id="other">
                                 </div>
                             </div>
                             <div class="col-sm-6">
@@ -297,15 +301,54 @@
                                 </div>
                             </div>
                         </div>
-                        
-                        <div class="form-group other">
-                            <label for="other">Other</label>
-                            <input type="text" class="form-control" id="other">
+
+                        <h4>Personal Services</h4>
+                        <div class="row checkbox-collection">
+                            <div class="col-sm-6">
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value="">Bathing</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value="">Companionship</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value="">Exercise</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value="">Groceries and Shopping</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value="">Grooming</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value="">Housekeeping</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value="">Managing Medications</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value="">Meal Prep</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value="">Transferring and Mobility</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value="">Toileting</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value="">Transportation</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value="">Travel Companion</label>
+                                </div>
+                            </div>
                         </div>
                         
                         <div class="form-group">
-                            <label for="address">Job Description</label>
-                            <textarea class="form-control" rows="4" id="address" placeholder="My mother is in need of..."></textarea>
+                            <label for="address">Special Medical Conditions</label>
+                            <textarea class="form-control" rows="4" id="address" placeholder="ALS, diabetes, stroke..."></textarea>
                         </div>
 
                         <!-- DYNAMIC FORM FIELD, WILL NEED REACT -->
@@ -316,7 +359,15 @@
                                 <label class="col-xs-3 control-label">Time End</label>
                                 <label class="col-xs-1 control-label"></label>
                                 <div class="col-xs-5">
-                                    <input type="text" class="form-control" />
+                                    <select class="form-control" id="length">
+                                        <option>Monday</option>
+                                        <option>Tuesday</option>
+                                        <option>Wednesday</option>
+                                        <option>Thursday</option>
+                                        <option>Friday</option>
+                                        <option>Saturday</option>
+                                        <option>Sunday</option>
+                                    </select>
                                 </div>
                                 <div class="col-xs-3">
                                     <input type="time" class="form-control" />
@@ -328,6 +379,16 @@
                                     <span class="add-time"><i class="fa fa-plus"></i></span>
                                 </div>
                             </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="address">Job Description</label>
+                            <textarea class="form-control" rows="4" id="address" placeholder="My mother is in need of..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="lovedones">Describe your Loved Ones (Optional)</label>
+                            <textarea class="form-control" rows="4" id="lovedones" placeholder="My mother is 88 years old..."></textarea>
                         </div>
                         
                         <a href="#" class="btn btn-default back">Back</a>

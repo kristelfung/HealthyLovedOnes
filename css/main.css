@@ -815,10 +815,6 @@ textarea {
   margin-top: 8px;
 }
 
-.other {
-  max-width: 250px;
-}
-
 /* UPLOAD BUTTON  */
 .inputfile {
   /* hide upload button */
@@ -840,6 +836,10 @@ textarea {
 .inputfile + label * {
   /* touch screen */
   pointer-events: none;
+}
+
+.checkbox-collection {
+  margin-bottom: 20px;
 }
 
 /* search */
