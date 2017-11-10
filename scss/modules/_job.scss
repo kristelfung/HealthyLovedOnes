@@ -106,3 +106,14 @@
         text-align: center;
     }
 }
+
+/* review caregiver */
+.review-modal {
+    text-align: left;
+
+
+    .rating-stars i {
+        color: $yellow;
+        font-size: 24px;
+    }
+}

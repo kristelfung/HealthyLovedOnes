@@ -116,8 +116,44 @@
                             <img src="images/msg.png" class="hired-picture">
                             <h4>Sonia Tam</h4>
                             <h5>$120 HKD per hour</h5>
-                            <a href="#" class="btn btn-primary">Message</a>
-                            <a href="#" class="btn btn-default">Review</a>
+                            <button class="btn btn-primary">Message</button>
+                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">Review</button>
+                            
+                            <!-- Modal -->
+                            <div id="myModal" class="modal fade review-modal" role="dialog">
+                              <div class="modal-dialog">
+                            
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h4 class="modal-title">Review Caregiver</h4>
+                                  </div>
+                                  <div class="modal-body">
+                                    <form>
+                                        <div class="form-group rating-stars">
+                                            <label>Star Rating</label>
+                                            <br>
+                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="comment">Comments</label>
+                                            <textarea class="form-control" rows="5" id="comment" placeholder="Describe your experience!"></textarea>
+                                        </div>
+                                        <div class="submit-buttons">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            <button type="submit" class="btn btn-primary" data-dismiss="modal">Submit</button>
+                                        </div>
+                                    </form>
+                                  </div>
+                                </div>
+                            
+                              </div>
+                            </div>
+
                         </div>
                         <h4>Work Times</h4>
                         <h6>From November 6, 2017 - December 10, 2017</h6>
@@ -195,7 +231,7 @@
                             </td>
                             <td class="applicant-buttons">
                                 <a href="#" class="btn btn-default">Hire</a>
-                                <a href="#" class="btn btn-default">Message</a>
+                                <button href="#" class="btn btn-default">Message</button>
                             </td>
                         </tr>
                         <tr>
@@ -207,7 +243,7 @@
                             </td>
                             <td class="applicant-buttons">
                                 <a href="#" class="btn btn-default">Hire</a>
-                                <a href="#" class="btn btn-default">Message</a>
+                                <button class="btn btn-default">Message</button>
                             </td>
                         </tr>
                     </table>

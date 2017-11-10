@@ -672,6 +672,16 @@ textarea {
   }
 }
 
+/* review caregiver */
+.review-modal {
+  text-align: left;
+}
+
+.review-modal .rating-stars i {
+  color: #FFC107;
+  font-size: 24px;
+}
+
 .inbox {
   /* the entire table */
   width: 100%;
