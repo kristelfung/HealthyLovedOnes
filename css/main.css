@@ -556,6 +556,15 @@ textarea {
   margin-top: 20px;
 }
 
+.reviewpic-row {
+  margin-bottom: 20px;
+}
+
+.review-photo {
+  max-width: 250px;
+  border-radius: 50%;
+}
+
 .job {
   background-color: #FCE4EC;
   border-radius: 10px;
