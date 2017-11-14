@@ -250,6 +250,91 @@
                 </div>
             </div>
 
+            <br/>
+            <h3>Completed Jobs</h3>
+
+            <div class="job">
+                <div class="job-name">
+                    <h4>Jane Doe</h4>
+                    <h6>June 6, 2017</h6>
+                </div>
+                <div class="job-right">
+                    <img src="images/dashboard/confirmedjob.png" class="job-status">
+                    <a class="expand-job" data-toggle="collapse" data-target="#job3"><i class="fa fa-angle-down expand-job" aria-hidden="true"></i></a>
+                </div>
+
+                <div id="job3" class="collapse job-desc">
+                    <div class="hired-caregiver">
+                        <h4>Hired Caregiver</h4>
+                        <img src="images/msg.png" class="hired-picture">
+                        <h4>Sonia Tam</h4>
+                        <h5>$120 HKD per hour</h5>
+                        <button class="btn btn-primary">Message</button>
+                        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">Review</button>
+                        
+                        <!-- Modal -->
+                        <div id="myModal" class="modal fade review-modal" role="dialog">
+                          <div class="modal-dialog">
+                        
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h4 class="modal-title">Review Caregiver</h4>
+                              </div>
+                              <div class="modal-body">
+                                <form>
+                                    <div class="form-group rating-stars">
+                                        <label>Star Rating</label>
+                                        <br>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="comment">Comments</label>
+                                        <textarea class="form-control" rows="5" id="comment" placeholder="Describe your experience!"></textarea>
+                                    </div>
+                                    <div class="submit-buttons">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        <button type="submit" class="btn btn-primary" data-dismiss="modal">Submit</button>
+                                    </div>
+                                </form>
+                              </div>
+                            </div>
+                        
+                          </div>
+                        </div>
+
+                    </div>
+                    <h4>Work Times</h4>
+                    <h6>From November 6, 2017 - December 10, 2017</h6>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Day of Week</th>
+                                <th>Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Sunday</td>
+                                <td>10:00 AM - 3:00 PM</td>
+                            </tr>
+                            <tr>
+                                <td>Monday</td>
+                                <td>10:00 AM - 3:00 PM</td>
+                            </tr>
+                            <tr>
+                                <td>Wednesday</td>
+                                <td>10:00 AM - 3:00 PM</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
         </div>
     </div>
 
